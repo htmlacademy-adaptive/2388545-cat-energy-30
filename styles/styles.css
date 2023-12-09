@@ -1,1 +1,1 @@
-@charset "UTF-8";.header{background-color:#639;color:#fff;padding:10px 15px}
+@charset "UTF-8";body{font-family:"Oswald"}@font-face{font-family:"Oswald";font-style:normal;font-weight:400;src:url(../fonts/oswald/oswaldregular.woff2)format("woff2");font-display:swap}@font-face{font-family:"Lato";font-style:normal;font-weight:400;src:url(../fonts/lato/Lato-Regular.woff2)format("woff2");font-display:swap}.header{background-color:#639;color:#fff;padding:10px 15px}
