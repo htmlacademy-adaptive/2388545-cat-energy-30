@@ -1,8 +1,10 @@
 .main-nav__toggle {
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   border: none;
   background-image: url("../../images/icons/burger.svg");
+  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .main-nav__list {
