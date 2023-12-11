@@ -1,0 +1,53 @@
+.about {
+  padding: 0 20px 29px;
+}
+
+.about__title {
+  @include title-mobile;
+  margin-bottom: 42px;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.about__item {
+  position: relative;
+  padding-left: 80px;
+  margin-bottom: 26px;
+}
+
+.about__item::before {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  content: "";
+  width: 60px;
+  height: 60px;
+  background-color: $basic-green;
+  background-image: url("../../images/about-benefit.svg");
+  background-size: 25px 28px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about__item--cooking::before {
+  background-image: url("../../images/about-cooking.svg");
+  background-size: 26px 29px;
+}
+
+.about__item--diet::before {
+  background-image: url("../../images/about-diet.svg");
+  background-size: 25px 30px;
+}
+
+.about__item--time::before {
+  background-image: url("../../images/about-time.svg");
+  background-size: 27px 31px;
+}
+
+.about__content {
+  margin: 0;
+}

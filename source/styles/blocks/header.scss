@@ -1,12 +1,16 @@
 .header {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 12px 20px 9px;
+  position: relative;
+  padding-top: 65px;
   background-color: #ffffff;
   color: #000000;
   background-image: url("../../images/footer-logo.svg");
   background-size: 101px auto;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top 22px center;
+}
+
+.header__logo {
+  position: absolute;
+  top: 13px;
+  left: 20px;
 }
