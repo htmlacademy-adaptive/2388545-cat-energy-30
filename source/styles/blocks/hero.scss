@@ -14,10 +14,10 @@
   padding-bottom: 0;
   min-height: 302px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero-cat@1x.jpg");
-  background-size: 320px 303px, 320px 302px;
+  background-size: auto calc(100% - 135px), auto calc(100% - 135px);
   background-repeat: no-repeat;
   background-position: top center, top center;
-  background-color: #63a73c;
+  background-color: #4a494e;
 }
 
 .hero__wrapper::before {
@@ -41,15 +41,18 @@
 }
 
 .hero__title {
-  margin: 0;
+  max-width: 260px;
+  margin: 0 auto;
+  font-family: $secondary-font;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
 }
 
 .hero__slogan {
-  margin-top: 25px;
-  margin-bottom: 0;
+  max-width: 260px;
+  margin: 25px auto 0;
+  font-family: $secondary-font;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
