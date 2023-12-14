@@ -17,7 +17,7 @@
   position: relative;
   min-height: 60px;
   padding-left: 80px;
-  margin-bottom: 26px;
+  margin-bottom: 20px;
 }
 
 .about__item::before {
@@ -28,24 +28,24 @@
   width: 60px;
   height: 60px;
   background-color: $basic-green;
-  background-image: url("../../images/about-benefit.svg");
+  background-image: url("../../images/about/about-benefit.svg");
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .about__item--cooking::before {
-  background-image: url("../../images/about-cooking.svg");
+  background-image: url("../../images/about/about-cooking.svg");
   background-size: 26px 29px;
 }
 
 .about__item--diet::before {
-  background-image: url("../../images/about-diet.svg");
+  background-image: url("../../images/about/about-diet.svg");
   background-size: 25px 30px;
 }
 
 .about__item--time::before {
-  background-image: url("../../images/about-time.svg");
+  background-image: url("../../images/about/about-time.svg");
   background-size: 27px 31px;
 }
 

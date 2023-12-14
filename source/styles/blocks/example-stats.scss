@@ -1,13 +1,15 @@
 .example-stats {
   display: flex;
   justify-content: space-between;
-  gap: 10px;
   align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 330px;
 }
 
 .example-stats__item {
-  display: flex;
-  flex-direction: column;
+  max-width: 135px;
+  margin-bottom: 10px;
 }
 
 .example-stats__number {
@@ -15,7 +17,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
   min-width: 124px;
   padding: 15px 10px;
   font-family: $secondary-font;
@@ -33,7 +34,7 @@
 .example-stats__description {
   box-sizing: border-box;
   width: calc(100% - 18px * 2);
-  margin: -8px auto;
+  margin: -8px auto 0;
   padding: 0 5px;
   font-size: 12px;
   line-height: 12px;
