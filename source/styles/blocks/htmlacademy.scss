@@ -1,0 +1,18 @@
+.htmlacademy__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  color: #444444;
+  text-decoration: none;
+}
+
+.htmlacademy__text {
+  width: calc(100% - 40px);
+}
+
+.htmlacademy__logo {
+  width: 27px;
+  height: 34px;
+  fill: #666666;
+}
