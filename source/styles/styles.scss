@@ -5,8 +5,16 @@
 @import "./global/global.scss";
 @import "./global/visually-hidden.scss";
 
-/* BLOCKS */
+/* COMPONENTS */
 @import "./blocks/button.scss";
+@import "./blocks/inner-title.scss";
+@import "./blocks/title-with-line.scss";
+@import "./blocks/inner-text.scss";
+@import "./blocks/input-text.scss";
+@import "./blocks/control.scss";
+@import "./blocks/textarea.scss";
+
+/* BLOCKS */
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/hero.scss";
@@ -19,3 +27,5 @@
 @import "./blocks/offer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/htmlacademy.scss";
+@import "./blocks/group.scss";
+@import "./blocks/program-choose.scss";

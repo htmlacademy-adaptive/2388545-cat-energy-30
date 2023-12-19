@@ -40,13 +40,13 @@
     <main class="main-container">
       <section class="program-choose">
         <h1 class="program-choose__title inner-title">Подбор программы</h1>
-        <p class="inner-text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="program-choose__text inner-text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота</p>
         <form class="program-choose__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="program-choose__group group">
+          <fieldset class="program-choose__group program-choose__group--data group">
             <legend class="visually-hidden">Данные кота.</legend>
             <ul class="group__list">
               <li class="group__item input-text">
-                <label class="input-text__label" for="cat-name">ИМЯ:*</label>
+                <label class="input-text__label" for="cat-name">Имя:*</label>
                 <input class="input-text__input" type="text" name="cat-name" id="cat-name" placeholder="Имя питомца" value="Барсик" required>
               </li>
               <li class="group__item input-text">
@@ -59,81 +59,78 @@
               </li>
             </ul>
           </fieldset>
-
-
-          <fieldset class="program-choose__group group">
+          <fieldset class="program-choose__group program-choose__group--program group">
             <legend class="visually-hidden">Выбор программы.</legend>
             <ul class="group__list">
-              <li class="group__item radio">
-                <input class="visually-hidden radio__input" type="radio" name="program" id="slim" value="slim" checked>
-                <label class="radio__label" for="slim">Похудение</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="radio" name="program" id="slim" value="slim" checked>
+                <label class="control__label control__label--radio" for="slim">Похудение</label>
               </li>
-              <li class="group__item radio">
-                <input class="visually-hidden radio__input" type="radio" name="program" id="pro" value="pro">
-                <label class="radio__label" for="pro">Набор массы</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="radio" name="program" id="pro" value="pro">
+                <label class="control__label control__label--radio" for="pro">Набор массы</label>
               </li>
-              <li class="group__item radio">
-                <input class="visually-hidden radio__input" type="radio" name="program" id="advice" value="advice">
-                <label class="radio__label" for="advice">Не знаю (нужен ваш совет)</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="radio" name="program" id="advice" value="advice">
+                <label class="control__label control__label--radio" for="advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
-
-
           <fieldset class="program-choose__group group">
             <legend class="visually-hidden">Контактные данные</legend>
-            <h2 class="group__title title-with-line">Контактные данные (владельца кота)</h2>
+            <h2 class="group__title title-with-line">
+              <span class="title-with-line__text">Контактные данные (владельца&nbsp;кота)</span>
+            </h2>
             <ul class="group__list">
               <li class="group__item input-text">
                 <label class="input-text__label" for="email">E-mail:*</label>
-                <input class="input-text__input" type="email" name="email" id="email" placeholder="Ваш e-mail" value="kuklachev@gmail.com" required>
+                <input class="input-text__input input-text__input--email" type="email" name="email" id="email" placeholder="Ваш e-mail" value="kuklachev@gmail.com" required>
               </li>
               <li class="group__item input-text">
                 <label class="input-text__label" for="phone">Телефон:*</label>
-                <input class="input-text__input" type="text" name="phone" id="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
+                <input class="input-text__input input-text__input--phone" type="text" name="phone" id="phone" placeholder="Ваш телефон" value="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
-
-
           <div class="program-choose__group group">
-            <h2 class="group__title title-with-line">Комментарий</h2>
-            <label class="visually-hidden" for="cat-about">Расскажите обо всех повадках кота.</label>
-            <textarea class="input-text input-text--textarea" id="cat-about" name="cat-about" placeholder="Расскажите обо всех повадках кота" rows="6">Расскажите обо всех повадках кота</textarea>
+            <h2 class="group__title group__title--about title-with-line">
+              <span class="title-with-line__text">Комментарий</span>
+            </h2>
+            <div class="group__textarea input-text">
+              <label class="visually-hidden" for="cat-about">Расскажите обо всех повадках кота.</label>
+              <textarea class="input-text__input input-text__input--textarea " id="cat-about" name="cat-about" placeholder="Расскажите обо всех повадках кота" rows="5">Расскажите обо всех повадках кота</textarea>
+            </div>
           </div>
-
-
           <fieldset class="program-choose__group group">
             <legend class="visually-hidden">Дополнительно</legend>
-            <h2 class="group__title title-with-line">Дополнительно</h2>
-
+            <h2 class="group__title group__title--extra title-with-line">
+              <span class="title-with-line__text">Дополнительно</span>
+            </h2>
             <ul class="group__list">
-              <li class="group__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
-                <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="control__label" for="sweetener">Сахарозаменитель</label>
               </li>
-              <li class="group__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="water" id="water" checked>
-                <label class="checkbox__label" for="water">Питьевая вода</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="checkbox" name="water" id="water">
+                <label class="control__label" for="water">Питьевая вода</label>
               </li>
-              <li class="group__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="milk" id="milk" checked>
-                <label class="checkbox__label" for="milk">Молоко</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="checkbox" name="milk" id="milk">
+                <label class="control__label" for="milk">Молоко</label>
               </li>
-              <li class="group__item checkbox">
-                <input class="visually-hidden checkbox__input" type="checkbox" name="vitamins" id="vitamins" checked>
-                <label class="checkbox__label" for="vitamins">Витамины</label>
+              <li class="group__item group__item--control control">
+                <input class="visually-hidden control__input" type="checkbox" name="vitamins" id="vitamins">
+                <label class="control__label" for="vitamins">Витамины</label>
               </li>
             </ul>
           </fieldset>
-
-
-          <button class="button" type="submit">Отправить заявку</button>
-          <p class="program-choose__message">* — Обязательные поля</p>
+          <button class="program-choose__button button" type="submit">Отправить заявку</button>
+          <p class="program-choose__message">* &ndash;&ensp;Обязательные поля</p>
         </form>
       </section>
       <footer class="footer">
-        <section class="offer">
+        <section class="offer offer--inner">
           <div class="offer__wrapper">
             <div class="offer__container">
               <h2 class="offer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>

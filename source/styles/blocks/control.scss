@@ -1,0 +1,58 @@
+.control {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.control__label {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  min-height: 30px;
+  padding-left: 45px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 29px;
+    height: 29px;
+    border: 1px solid $special-grey;
+  }
+
+  &::after {
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    content: url("../../images/icons/checkbox-tick.svg");
+    width: 20px;
+    height: 20px;
+    display: none;
+  }
+}
+
+.control__label--radio {
+  &::before {
+    border-radius: 50%;
+  }
+
+  &::after {
+    top: 9px;
+    left: 9px;
+    content: "";
+    width: 13px;
+    height: 13px;
+    background-color: $basic-green;
+    border-radius: 50%;
+    transform: scale(1.01) /* для корректного отображения псевдоэлемента */
+  }
+}
+
+.control__input:checked + .control__label::after {
+  display: block;
+}

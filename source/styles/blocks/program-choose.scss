@@ -1,0 +1,39 @@
+.program-choose {
+  padding-bottom: 30px;
+  border-top: $border-grey;
+}
+
+.program-choose__title {
+  margin: 27px 0 37px;
+  padding: 0 20px;
+}
+
+.program-choose__text {
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+
+.program-choose__group {
+  padding: 0 0 21px;
+}
+
+.program-choose__group--data {
+  border-bottom: $border-grey;
+}
+
+.program-choose__group--program {
+  padding: 23px 0 19px;
+  border-bottom: $border-grey;
+}
+
+.program-choose__button {
+  display: block;
+  width: calc(100% - 40px);
+  margin: 11px auto 20px;
+}
+
+.program-choose__message {
+  margin: 0;
+  padding: 0 20px;
+  text-align: center;
+}
