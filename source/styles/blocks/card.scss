@@ -1,0 +1,104 @@
+.card {
+  padding: 20px 0 25px;
+}
+
+.card__wrapper {
+  display: flex;
+}
+
+.card__image-container {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 140px;
+  padding: 0 10px;
+}
+
+.card__image {
+  object-fit: contain;
+}
+
+.card__content {
+  flex-grow: 1;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  width: 80px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}
+
+.card__data {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $small-text-color;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.card__description {
+  margin: 0;
+}
+
+.card__button {
+  width: 100%;
+  margin-top: 21px;
+}
+
+.card--show-more {
+  position: relative;
+  padding: 78px 20px 23px;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    content: url("../../images/icons/plus.svg");
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.card--show-more .card__title {
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.card--show-more .card__description {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.card--extra {
+  padding: 12px 0 18px;
+}
+
+.card--extra .card__title {
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.card--extra .card__data {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.card--extra .card__button {
+  margin-top: 13px;
+}
