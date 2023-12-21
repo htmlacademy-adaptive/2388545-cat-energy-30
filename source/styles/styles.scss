@@ -6,31 +6,31 @@
 @import "./global/visually-hidden.scss";
 
 /* COMPONENTS */
-@import "./blocks/button.scss";
-@import "./blocks/inner-title.scss";
-@import "./blocks/title-with-line.scss";
-@import "./blocks/inner-text.scss";
-@import "./blocks/input-text.scss";
-@import "./blocks/control.scss";
-@import "./blocks/textarea.scss";
-@import "./blocks/card.scss";
+@import "./components/button.scss";
+@import "./components/inner-title.scss";
+@import "./components/title-with-line.scss";
+@import "./components/inner-text.scss";
+@import "./components/input-text.scss";
+@import "./components/control.scss";
+@import "./components/textarea.scss";
+@import "./components/card.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/hero.scss";
-@import "./blocks/main-catalog.scss";
-@import "./blocks/about.scss";
-@import "./blocks/example.scss";
-@import "./blocks/example-stats.scss";
-@import "./blocks/slider.scss";
+@import "./blocks/index/hero.scss";
+@import "./blocks/index/main-catalog.scss";
+@import "./blocks/index/about.scss";
+@import "./blocks/index/example.scss";
+@import "./blocks/index/example-stats.scss";
+@import "./blocks/index/slider.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/offer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/htmlacademy.scss";
-@import "./blocks/group.scss";
-@import "./blocks/program-choose.scss";
-@import "./blocks/page-catalog.scss";
-@import "./blocks/products-main.scss";
-@import "./blocks/products-extra.scss";
-@import "./blocks/gift.scss";
+@import "./blocks/form/group.scss";
+@import "./blocks/form/program-choose.scss";
+@import "./blocks/catalog/page-catalog.scss";
+@import "./blocks/catalog/products-main.scss";
+@import "./blocks/catalog/products-extra.scss";
+@import "./blocks/catalog/gift.scss";
