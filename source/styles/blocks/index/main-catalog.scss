@@ -39,15 +39,17 @@
 }
 
 .main-catalog__item--slim::after {
-  content: url("../../images/cat-slim.svg");
+  content: "";
   width: 36px;
   height: 53px;
+  background-image: url("../../images/icons/stack.svg#cat-slim");
 }
 
 .main-catalog__item--pro::after {
-  content: url("../../images/cat-pro.svg");
+  content: "";
   width: 67px;
   height: 28px;
+  background-image: url("../../images/icons/stack.svg#cat-pro");
 }
 
 .main-catalog__title {
