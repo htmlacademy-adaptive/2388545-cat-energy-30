@@ -1,11 +1,6 @@
-.control {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .control__label {
   box-sizing: border-box;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   position: relative;
   min-height: 30px;

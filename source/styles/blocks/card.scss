@@ -20,7 +20,8 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  width: 140px;
+  min-width: 140px;
+  width: 50%;
   padding: 0 10px;
 }
 
@@ -29,7 +30,7 @@
 }
 
 .card__content {
-  flex-grow: 1;
+  width: 50%;
 }
 
 .card__title {
