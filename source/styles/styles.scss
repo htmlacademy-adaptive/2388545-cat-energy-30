@@ -6,14 +6,14 @@
 @import "./global/visually-hidden.scss";
 
 /* COMPONENTS */
-@import "./components/button.scss";
-@import "./components/inner-title.scss";
-@import "./components/title-with-line.scss";
-@import "./components/inner-text.scss";
-@import "./components/input-text.scss";
-@import "./components/control.scss";
-@import "./components/textarea.scss";
-@import "./components/card.scss";
+@import "./blocks/button.scss";
+@import "./blocks/inner-title.scss";
+@import "./blocks/title-with-line.scss";
+@import "./blocks/inner-text.scss";
+@import "./blocks/input-text.scss";
+@import "./blocks/control.scss";
+@import "./blocks/textarea.scss";
+@import "./blocks/card.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
