@@ -1,9 +1,31 @@
 .input-text {
+  position: relative;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   width: 100%;
   gap: 15px;
+}
+
+.input-text--email,
+.input-text--phone {
+  --mask-image: url("../../images/icons/stack.svg#input-email");
+
+  &::after {
+    position: absolute;
+    top: 13px;
+    right: 11px;
+    content: "";
+    width: 20px;
+    height: 20px;
+    mask-image: var(--mask-image);
+    mask-repeat: no-repeat;
+    background-color: #000000;
+  }
+}
+
+.input-text--phone {
+  --mask-image: url("../../images/icons/stack.svg#input-phone");
 }
 
 .input-text__label {
@@ -25,16 +47,8 @@
 
 .input-text__input--email {
   padding-right: 35px;
-  background-image: url("../../images/icons/input-email.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: top 12px right 11px;
 }
 
 .input-text__input--phone {
   padding-right: 35px;
-  background-image: url("../../images/icons/input-phone.svg");
-  background-repeat: no-repeat;
-  background-size: 20px 20px;
-  background-position: top 12px right 11px;
 }

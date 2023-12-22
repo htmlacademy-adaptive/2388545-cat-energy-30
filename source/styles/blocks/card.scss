@@ -85,7 +85,9 @@
     top: 25px;
     left: 50%;
     transform: translateX(-50%);
-    content: url("../../images/icons/plus.svg");
+    content: "";
+    background-image: url("../../images/icons/stack.svg#plus");
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
   }
