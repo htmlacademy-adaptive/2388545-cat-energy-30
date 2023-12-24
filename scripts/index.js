@@ -1,0 +1,1 @@
+var t=document.querySelector(".slider__toggle"),e=document.querySelector(".slider");if(e){let l=!1;t.addEventListener("click",s=>{s.preventDefault(),l?(e.classList.toggle("slider--after"),e.classList.toggle("slider--before")):(l=!0,e.classList.add("slider--after"))})}
