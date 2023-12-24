@@ -11,7 +11,7 @@
 .main-catalog__item {
   position: relative;
   margin-bottom: 20px;
-  padding: 18px 20px 14px;
+  padding: 16px 20px;
   background-color: $basic-grey;
   color: $small-text-color;
 }
@@ -39,15 +39,17 @@
 }
 
 .main-catalog__item--slim::after {
-  content: url("../../images/cat-slim.svg");
+  content: "";
   width: 36px;
   height: 53px;
+  background-image: url("../../images/icons/stack.svg#cat-slim");
 }
 
 .main-catalog__item--pro::after {
-  content: url("../../images/cat-pro.svg");
+  content: "";
   width: 67px;
   height: 28px;
+  background-image: url("../../images/icons/stack.svg#cat-pro");
 }
 
 .main-catalog__title {
@@ -89,18 +91,16 @@
     transform: translateY(-50%);
     left: calc(100% - 41px);
     content: "";
-    width: 24px;
+    width: 32px;
     height: 10px;
-    background-image: url("../../images/icons/button-arrow.svg");
-    background-position: center right -2px;
+    background-image: url("../../images/icons/stack.svg#button-arrow");
+    background-position: center right 7px;
     background-repeat: no-repeat;
     background-size: 32px 10px;
+    transition: 0.1s ease-in-out;
   }
 
   &:hover::after {
-    width: 32px;
-    background-position: right;
-    background-size: 100%;
+    background-position: center right 3px;
   }
 }
-

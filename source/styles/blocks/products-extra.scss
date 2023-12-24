@@ -1,0 +1,25 @@
+.products-extra {
+  padding: 25px 0 35px;
+}
+
+.products-extra__title {
+  margin-bottom: 34px;
+}
+
+.products-extra__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.products-extra__item {
+  border-bottom: 1px solid $special-grey;
+}
+
+.products-extra__item:first-child {
+  border-top: 1px solid $special-grey;
+}
+
+.products-extra__gift {
+  margin: 35px 20px 0;
+}

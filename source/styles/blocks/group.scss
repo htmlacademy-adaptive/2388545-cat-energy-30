@@ -1,0 +1,35 @@
+.group {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.group__list {
+  margin: 0;
+  padding: 0 20px;
+  list-style-type: none;
+}
+
+.group__item:not(:last-child) {
+  margin-bottom: 14px;
+}
+
+.group__item--control:not(:last-child) {
+  margin-bottom: 13px;
+}
+
+.group__title {
+  margin: 26px 0 35px;
+}
+
+.group__title--about {
+  margin: 3px 0 39px;
+}
+
+.group__title--extra {
+  margin: 2px 0 33px;
+}
+
+.group__textarea {
+  margin: 0 20px;
+}

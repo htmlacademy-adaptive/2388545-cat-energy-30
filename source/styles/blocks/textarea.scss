@@ -1,0 +1,10 @@
+.textarea {
+  resize: none;
+  box-sizing: border-box;
+  width: calc(100% - 20px * 2);
+  padding: 10px 10px 18px 15px;
+  font-family: $secondary-font;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #e7e7e7;
+}

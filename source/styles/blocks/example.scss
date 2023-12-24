@@ -4,7 +4,7 @@
 
 .example__wrapper {
   margin: auto;
-  padding: 22px 20px 40px;
+  padding: 22px 20px 0;
 }
 
 .example__title {
@@ -28,4 +28,8 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.example__slider {
+  padding-bottom: 40px;
 }
