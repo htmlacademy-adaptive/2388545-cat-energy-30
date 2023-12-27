@@ -1,4 +1,5 @@
-/* здесь используйте глобальные переменные */
+// Colors
+
 $basic-green: #68b738;
 $basic-grey: #f2f2f2;
 $special-grey: #cdcdcd;
@@ -6,3 +7,15 @@ $special-light-grey: #ebebeb;
 $special-dark-grey: #222222;
 $small-text-color: #444444;
 $border-grey: 1px solid #d9d9d9;
+
+// Viewports
+
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;
+
+// Adaptive sizes
+
+$mobile-padding: 20px;
+$tablet-padding: 30px;
+$desktop-padding: 110px;

@@ -7,10 +7,34 @@
   background-size: 101px auto;
   background-repeat: no-repeat;
   background-position: top 22px center;
+  z-index: 2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    background-image: none;
+  }
+}
+
+.header__wrapper {
+  @media (min-width: $tablet-width) {
+    margin: 50px auto 29px;
+    width: calc(100% - 2 * $tablet-padding);
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(100% - 2 * $desktop-padding);
+  }
 }
 
 .header__logo {
   position: absolute;
   top: 13px;
-  left: 20px;
+  left: $mobile-padding;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+  }
 }
