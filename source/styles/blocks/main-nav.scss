@@ -1,6 +1,6 @@
 .main-nav {
   @media (min-width: $desktop-width) {
-    background-color: $basic-green;
+    max-width: 50%;
   }
 }
 
@@ -39,13 +39,6 @@
   list-style-type: none;
   background-color: #ffffff;
 
-  @media (max-width: $mobile-width-only) {
-    position: absolute;
-    top: 65px;
-    left: 0;
-    width: 100%;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
@@ -55,6 +48,7 @@
 
   @media (min-width: $desktop-width) {
     gap: 0 32px;
+    background-color: transparent;
   }
 }
 
@@ -62,6 +56,19 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+}
+
+.main-nav--opened .main-nav__list {
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
 }
 
 .main-nav__item {

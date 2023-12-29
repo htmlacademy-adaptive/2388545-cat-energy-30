@@ -1,43 +1,107 @@
 .hero {
   position: relative;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   min-height: 480px;
   text-align: center;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    min-height: 848px;
+    padding: 4px 120px 526px;
+    color: #000000;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 551px;
+    padding: 0 190px 100px;
+  }
+}
+
+.hero::before {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 50%;
+    height: calc(100% + 143px);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat-desktop@2x.jpg") type("image/jpeg") 2x);
+    background-repeat: no-repeat;
+    background-color: #4a494e;
+    background-position: center;
+  }
 }
 
 .hero__wrapper {
   position: relative;
   box-sizing: border-box;
-  padding: 27px 20px;
-  padding-bottom: 0;
+  padding: 27px 20px 0;
   min-height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/hero/hero-cat@1x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat@2x.jpg") type("image/jpeg") 2x);
   background-size: auto calc(100% - 135px), auto calc(100% - 135px);
   background-repeat: no-repeat;
   background-position: top center, top center;
   background-color: #4a494e;
+  z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    min-height: 200px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 55px);
+  }
 }
 
 .hero__wrapper::before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  content: "";
-  width: 100%;
-  height: 135px;
-  background-color: #ffffff;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 135px;
+    background-color: #ffffff;
+  }
 }
 
 .hero__wrapper::after {
   position: relative;
   display: block;
   margin: 30px auto 0;
-  content: url("../../images/hero/hero-product@1x.png");
+  content: "";
   width: 280px;
   height: 270px;
+  background-image: image-set(url("../../images/hero/hero-product@1x.png") type("image/png") 1x, url("../../images/hero/hero-product@2x.png") type("image/png") 2x);
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 709px;
+    height: 609px;
+    background-image: image-set(url("../../images/hero/hero-product-tablet@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-tablet@2x.png") type("image/png") 2x);
+
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: 0;
+    left: calc(100% + 168px);
+    top: 0;
+    width: 552px;
+    height: 499px;
+    background-image: image-set(url("../../images/hero/hero-product-desktop@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-desktop@2x.png") type("image/png") 2x);
+    z-index: -1;
+  }
 }
 
 .hero__title {
@@ -47,6 +111,17 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin: 32px 0 40px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 80px 0 40px;
+  }
 }
 
 .hero__slogan {
@@ -56,9 +131,28 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    max-width: 100%;
+    margin: 0 0 49px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px;
+  }
 }
 
 .hero__button {
   display: block;
   margin: auto 20px 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 14px 28px;
+    display: inline-block;
+    align-self: flex-start;
+    z-index: 1;
+  }
 }
