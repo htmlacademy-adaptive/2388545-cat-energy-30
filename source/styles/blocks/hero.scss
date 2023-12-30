@@ -28,10 +28,10 @@
     content: "";
     width: 50%;
     height: calc(100% + 143px);
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat-desktop@2x.jpg") type("image/jpeg") 2x);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat-desktop@2x.jpg") type("image/jpeg") 2x), linear-gradient(to right, #4e4d52 40%, #3f3e43 60%);
     background-repeat: no-repeat;
     background-color: #4a494e;
-    background-position: center;
+    background-position: center bottom;
   }
 }
 
@@ -89,7 +89,6 @@
     width: 709px;
     height: 609px;
     background-image: image-set(url("../../images/hero/hero-product-tablet@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-tablet@2x.png") type("image/png") 2x);
-
   }
 
   @media (min-width: $desktop-width) {

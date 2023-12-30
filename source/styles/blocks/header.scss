@@ -14,12 +14,24 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
+    background-color: transparent;
   }
 }
 
 .header--index {
-  @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 50%, rgba(104, 183, 56, 0.85) 50%), linear-gradient(to right, #606050, #434244);
+  &::before {
+    @media (min-width: $desktop-width) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 50%;
+      height: calc(100% - 100px);
+      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), linear-gradient(to right, #4e4d52 40%, #3f3e43 60%);
+      background-repeat: no-repeat, repeat-y;
+      background-size: cover;
+      z-index: -1;
+    }
   }
 }
 
