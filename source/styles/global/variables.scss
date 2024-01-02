@@ -8,11 +8,18 @@ $special-dark-grey: #222222;
 $small-text-color: #444444;
 $border-grey: 1px solid #d9d9d9;
 
+// Breakpoint
+
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;
+$breakpoint-gap: 0.02px;
+
 // Viewports
 
-$tablet-width: 768px;
-$desktop-width: 1440px;
-$mobile-width-only: 767px;
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-width: "(min-width: #{$breakpoint-tablet})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-width: "(min-width: #{$breakpoint-desktop})";
 
 // Adaptive sizes
 

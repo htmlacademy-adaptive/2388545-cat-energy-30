@@ -1,5 +1,9 @@
 .main-catalog {
-  padding: 20px;
+  padding: $mobile-padding;
+
+  @media #{$tablet-width} {
+    padding: 0 $tablet-padding;
+  }
 }
 
 .main-catalog__list {
@@ -14,6 +18,10 @@
   padding: 16px 20px;
   background-color: $basic-grey;
   color: $small-text-color;
+
+  @media #{$tablet-width} {
+    padding: 77px 316px 53px 52px;
+  }
 }
 
 .main-catalog__item:last-child {
@@ -29,27 +37,51 @@
   height: 50px;
   background-color: $basic-green;
   border-radius: 50%;
+
+  @media #{$tablet-width} {
+    top: 92px;
+    left: initial;
+    right: 63px;
+    width: 200px;
+    height: 200px;
+  }
 }
 
 .main-catalog__item::after {
   position: absolute;
-  top: 48px;
+  top: 47px;
   left: 45px;
   transform: translate(-50%, -50%);
+  content: "";
+
+  @media #{$tablet-width} {
+    top: 191px;
+    left: initial;
+    right: 163px;
+    transform: translate(50%, -50%);
+    }
 }
 
 .main-catalog__item--slim::after {
-  content: "";
   width: 36px;
   height: 53px;
   background-image: url("../../images/icons/stack.svg#cat-slim");
+
+  @media #{$tablet-width} {
+    width: 140px;
+    height: 194px;
+  }
 }
 
 .main-catalog__item--pro::after {
-  content: "";
   width: 67px;
   height: 28px;
   background-image: url("../../images/icons/stack.svg#cat-pro");
+
+  @media #{$tablet-width} {
+    width: 268px;
+    height: 112px;
+  }
 }
 
 .main-catalog__title {
@@ -61,21 +93,34 @@
   text-transform: uppercase;
   color: #000000;
   overflow-wrap: break-word;
+
+  @media #{$tablet-width} {
+    margin: 0 0 24px;
+    max-width: 340px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .main-catalog__description {
   position: relative;
   margin: 0;
+
+  @media #{$tablet-width} {
+    max-width: 340px;
+  }
 }
 
 .main-catalog__description::after {
-  position: absolute;
-  bottom: -21px;
-  left: 0;
-  content: "";
-  width: 100%;
-  height: 1px;
-  background-color: #d9d9d9;
+  @media #{$mobile-only} {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #d9d9d9;
+  }
 }
 
 .main-catalog__link {
@@ -102,5 +147,10 @@
 
   &:hover::after {
     background-position: center right 3px;
+  }
+
+  @media #{$tablet-width} {
+    margin-top: 50px;
+    padding: 4px 67px 5px 0;
   }
 }

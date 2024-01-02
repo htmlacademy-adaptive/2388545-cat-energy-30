@@ -7,21 +7,21 @@
   text-align: center;
   color: #ffffff;
 
-  @media (min-width: $tablet-width) {
-    min-height: 848px;
+  @media #{$tablet-width} {
+    min-height: 840px;
     padding: 4px 120px 526px;
     color: #000000;
     text-align: left;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     min-height: 551px;
     padding: 0 190px 100px;
   }
 }
 
 .hero::before {
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     position: absolute;
     right: 0;
     bottom: 0;
@@ -47,20 +47,20 @@
   background-color: #4a494e;
   z-index: 1;
 
-  @media (min-width: $tablet-width) {
+  @media #{$tablet-width} {
     padding: 0;
     min-height: 200px;
     background-image: none;
     background-color: #ffffff;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     width: calc(50% - 55px);
   }
 }
 
 .hero__wrapper::before {
-  @media (max-width: $mobile-width-only) {
+  @media #{$mobile-only} {
     position: absolute;
     left: 0;
     bottom: 0;
@@ -81,7 +81,7 @@
   background-image: image-set(url("../../images/hero/hero-product@1x.png") type("image/png") 1x, url("../../images/hero/hero-product@2x.png") type("image/png") 2x);
   z-index: 1;
 
-  @media (min-width: $tablet-width) {
+  @media #{$tablet-width} {
     position: absolute;
     top: calc(100% - 60px);
     left: 50%;
@@ -91,7 +91,7 @@
     background-image: image-set(url("../../images/hero/hero-product-tablet@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-tablet@2x.png") type("image/png") 2x);
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     position: absolute;
     margin: 0;
     left: calc(100% + 168px);
@@ -111,14 +111,14 @@
   font-weight: 400;
   line-height: 36px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$tablet-width} {
     max-width: 100%;
-    margin: 32px 0 40px;
+    margin: 26px 0 40px;
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     margin: 80px 0 40px;
   }
 }
@@ -131,14 +131,14 @@
   line-height: 14px;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media #{$tablet-width} {
     max-width: 100%;
     margin: 0 0 49px;
     font-size: 20px;
     line-height: 20px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$desktop-width} {
     margin: 0 0 52px;
   }
 }
@@ -147,7 +147,7 @@
   display: block;
   margin: auto 20px 0;
 
-  @media (min-width: $tablet-width) {
+  @media #{$tablet-width} {
     margin: 0;
     padding: 14px 28px;
     display: inline-block;
