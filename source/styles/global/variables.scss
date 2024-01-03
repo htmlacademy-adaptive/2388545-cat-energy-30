@@ -21,8 +21,10 @@ $tablet-width: "(min-width: #{$breakpoint-tablet})";
 $tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
 $desktop-width: "(min-width: #{$breakpoint-desktop})";
 
+
 // Adaptive sizes
 
+$max-content-width: 1600px;
 $mobile-padding: 20px;
 $tablet-padding: 30px;
 $desktop-padding: 110px;

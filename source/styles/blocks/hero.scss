@@ -1,9 +1,6 @@
 .hero {
   position: relative;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-height: 480px;
   text-align: center;
   color: #ffffff;
 
@@ -15,7 +12,7 @@
   }
 
   @media #{$desktop-width} {
-    min-height: 551px;
+    min-height: 549px;
     padding: 0 190px 100px;
   }
 }
@@ -36,6 +33,19 @@
 }
 
 .hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: $max-content-width;
+  margin: 0 auto;
+
+  @media #{$mobile-only} {
+    min-height: 481px;
+  }
+}
+
+
+.hero__content {
   position: relative;
   box-sizing: border-box;
   padding: 27px 20px 0;
@@ -59,7 +69,7 @@
   }
 }
 
-.hero__wrapper::before {
+.hero__content::before {
   @media #{$mobile-only} {
     position: absolute;
     left: 0;
@@ -71,7 +81,7 @@
   }
 }
 
-.hero__wrapper::after {
+.hero__content::after {
   position: relative;
   display: block;
   margin: 30px auto 0;

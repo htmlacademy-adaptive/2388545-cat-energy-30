@@ -10,6 +10,11 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media #{$desktop-width} {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .main-catalog__item {
@@ -20,6 +25,7 @@
   color: $small-text-color;
 
   @media #{$tablet-width} {
+    margin-bottom: 30px;
     padding: 77px 316px 53px 52px;
   }
 }
@@ -55,7 +61,7 @@
   content: "";
 
   @media #{$tablet-width} {
-    top: 191px;
+    top: 178px;
     left: initial;
     right: 163px;
     transform: translate(50%, -50%);
@@ -79,6 +85,8 @@
   background-image: url("../../images/icons/stack.svg#cat-pro");
 
   @media #{$tablet-width} {
+    top: 192px;
+    right: 163px;
     width: 268px;
     height: 112px;
   }
