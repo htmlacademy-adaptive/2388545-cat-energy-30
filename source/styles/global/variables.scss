@@ -8,6 +8,7 @@ $special-dark-grey: #222222;
 $small-text-color: #444444;
 $border-grey: 1px solid #d9d9d9;
 
+
 // Breakpoint
 
 $breakpoint-desktop: 1440px;
@@ -25,6 +26,6 @@ $desktop-width: "(min-width: #{$breakpoint-desktop})";
 // Adaptive sizes
 
 $max-content-width: 1600px;
-$mobile-padding: 20px;
-$tablet-padding: 30px;
-$desktop-padding: 110px;
+$mobile-side: 20px;
+$tablet-side: 30px;
+$desktop-side: 110px;

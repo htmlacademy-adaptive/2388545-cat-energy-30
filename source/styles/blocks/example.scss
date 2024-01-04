@@ -1,5 +1,9 @@
 .example {
   background-color: #eaeaea;
+
+  @media #{$tablet-only} {
+    background-color: #ffffff;
+  }
 }
 
 .example__wrapper {
@@ -8,7 +12,6 @@
 }
 
 .example__title {
-  @include title-mobile;
   margin-bottom: 41px;
 }
 

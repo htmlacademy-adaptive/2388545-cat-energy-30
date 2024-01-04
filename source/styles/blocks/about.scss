@@ -1,29 +1,80 @@
 .about {
-  padding: 0 20px 29px;
+  position: relative;
+  width: calc(100% - $mobile-side * 2);
+  max-width: 1600px;
+  align-self: center;
+  flex-shrink: 0;
+
+  @media #{$tablet-width} {
+    width: calc(100% - $tablet-side * 2);
+  }
+
+  @media #{$desktop-width} {
+    width: calc(100% - $desktop-side * 2);
+  }
 }
 
 .about__title {
-  @include title-mobile;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 32px;
+  }
 }
 
 .about__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  counter-reset: about-list 0;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 17px 122px;
+    max-width: 1000px;
+  }
+
+  @media #{$desktop-width} {
+    justify-content: space-between;
+    gap: 17px 64px;
+    max-width: inherit;
+  }
 }
 
 .about__item {
-  position: relative;
-  min-height: 60px;
-  padding-left: 80px;
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  gap: 20px;
   margin-bottom: 20px;
+
+  @media #{$tablet-width} {
+    grid-template-rows: 120px 1fr;
+    width: 261px;
+    min-height: 280px;
+  }
+
+  @media #{$desktop-width} {
+    width: 245px;
+  }
 }
 
 .about__item::before {
-  position: absolute;
-  top: -3px;
-  left: 0;
+  @media #{$tablet-width} {
+  counter-increment: about-list;
+  content: counter(about-list);
+  grid-area: 1 / 2 / 3 / 3;
+  align-self: start;
+  font-family: $secondary-font;
+  font-size: 280px;
+  line-height: 1;
+  color: $basic-grey;
+  text-align: center;
+  }
+}
+
+.about__item::after {
   content: "";
   width: 60px;
   height: 60px;
@@ -32,23 +83,36 @@
   background-size: 25px 28px;
   background-repeat: no-repeat;
   background-position: center;
+  flex-shrink: 0;
+
+  @media #{$tablet-width} {
+    width: 80px;
+    height: 80px;
+    align-self: end;
+    }
 }
 
-.about__item--cooking::before {
+.about__item--cooking::after {
   background-image: url("../../images/icons/stack.svg#about-cooking");
   background-size: 26px 29px;
 }
 
-.about__item--diet::before {
+.about__item--diet::after {
   background-image: url("../../images/icons/stack.svg#about-diet");
   background-size: 25px 30px;
 }
 
-.about__item--time::before {
+.about__item--time::after {
   background-image: url("../../images/icons/stack.svg#about-time");
   background-size: 27px 31px;
 }
 
 .about__content {
-  margin: 0;
+  margin: 3px 0 0;
+  grid-area: 1 / 2 / 2 / 3;
+
+  @media #{$tablet-width} {
+    margin: 10px 0 0;
+    grid-area: 2 / 1 / 3 / -1;
+  }
 }
