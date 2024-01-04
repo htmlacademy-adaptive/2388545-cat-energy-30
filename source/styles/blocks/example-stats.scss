@@ -5,11 +5,21 @@
   flex-wrap: wrap;
   gap: 10px;
   max-width: 330px;
+
+  @media #{$tablet-width} {
+    justify-content: flex-start;
+    gap: 43px;
+    max-width: initial;
+  }
 }
 
 .example-stats__item {
   max-width: 135px;
   margin-bottom: 10px;
+
+  @media #{$tablet-width} {
+    max-width: initial;
+  }
 }
 
 .example-stats__number {
@@ -29,6 +39,13 @@
   border-radius: 3px;
   flex-grow: 1;
   overflow-wrap: anywhere;
+
+  @media #{$tablet-width} {
+    padding: 15px 10px 18px;
+    font-size: 30px;
+    line-height: 37px;
+    min-width: 162px;
+  }
 }
 
 .example-stats__description {
@@ -42,4 +59,12 @@
   text-transform: lowercase;
   background-color: #eaeaea;
   overflow-wrap: anywhere;
+
+  @media #{$tablet-width} {
+    width: fit-content;
+    padding: 0 9px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
 }

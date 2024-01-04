@@ -1,7 +1,7 @@
 .about {
   position: relative;
   width: calc(100% - $mobile-side * 2);
-  max-width: 1600px;
+  max-width: $max-content-width;
   align-self: center;
   flex-shrink: 0;
 
