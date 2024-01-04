@@ -62,15 +62,15 @@
 
 .about__item::before {
   @media #{$tablet-width} {
-  counter-increment: about-list;
-  content: counter(about-list);
-  grid-area: 1 / 2 / 3 / 3;
-  align-self: start;
-  font-family: $secondary-font;
-  font-size: 280px;
-  line-height: 1;
-  color: $basic-grey;
-  text-align: center;
+    counter-increment: about-list;
+    content: counter(about-list);
+    grid-area: 1 / 2 / 3 / 3;
+    align-self: start;
+    font-family: $secondary-font;
+    font-size: 280px;
+    line-height: 1;
+    color: $basic-grey;
+    text-align: center;
   }
 }
 
@@ -89,7 +89,7 @@
     width: 80px;
     height: 80px;
     align-self: end;
-    }
+  }
 }
 
 .about__item--cooking::after {

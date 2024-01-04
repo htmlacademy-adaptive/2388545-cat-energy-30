@@ -76,14 +76,14 @@
     left: initial;
     right: 163px;
     transform: translate(50%, -50%);
-    }
+  }
 
-    @media #{$desktop-width} {
-      top: 90px;
-      left: 102px;
-      right: initial;
-      transform: translate(-50%, -50%);
-    }
+  @media #{$desktop-width} {
+    top: 90px;
+    left: 102px;
+    right: initial;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .main-catalog__item--slim::after {
