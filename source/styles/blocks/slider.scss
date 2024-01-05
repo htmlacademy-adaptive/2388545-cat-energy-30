@@ -47,6 +47,10 @@
       background-color: #ffffff;
       z-index: -1;
     }
+
+    @media #{$desktop-width} {
+      height: 135px;
+    }
   }
 }
 
