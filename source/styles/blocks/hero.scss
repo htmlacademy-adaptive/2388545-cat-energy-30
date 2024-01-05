@@ -88,7 +88,7 @@
   width: 280px;
   height: 270px;
   background-image: image-set(url("../../images/hero/hero-product@1x.png") type("image/png") 1x, url("../../images/hero/hero-product@2x.png") type("image/png") 2x);
-  z-index: 1;
+  z-index: 2;
 
   @media #{$tablet-width} {
     position: absolute;

@@ -19,14 +19,22 @@
   }
 
   @media #{$desktop-width} {
-    display: flex;
-    gap: 225px;
-    justify-content: space-between;
     padding: 0 $desktop-side 45px;
   }
 }
 
 .example__wrapper {
+  margin: auto;
+  max-width: $max-content-width;
+
+  @media #{$desktop-width} {
+    display: flex;
+    gap: 225px;
+    justify-content: space-between;
+  }
+}
+
+.example__content {
   margin: auto;
   padding: 25px $mobile-side 0;
 
@@ -53,7 +61,7 @@
   }
 }
 
-.example__content {
+.example__text {
   margin: 0;
 }
 

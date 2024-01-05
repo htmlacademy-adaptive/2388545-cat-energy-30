@@ -2,10 +2,35 @@
   background-color: $basic-grey;
 }
 
+.offer__wrapper {
+  position: relative;
+
+  @media #{$desktop-width} {
+    margin: auto;
+    max-width: $max-content-width;
+  }
+}
+
 .offer__container {
   display: flex;
   justify-content: space-between;
   padding: 26px 20px;
+
+  @media #{$tablet-width} {
+    padding: 60px 70px;
+  }
+
+  @media #{$desktop-width} {
+    position: absolute;
+    box-sizing: border-box;
+    gap: 93px;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    padding: 60px 79px;
+    background-color: #ffffff;
+    z-index: 2;
+  }
 }
 
 .offer__title {
@@ -17,12 +42,38 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media #{$tablet-width} {
+    margin-top: 3px;
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .offer__address {
   width: 50%;
   font-style: normal;
   line-height: 20px;
+
+  @media #{$tablet-width} {
+    text-align: right;
+  }
+
+  @media #{$desktop-width} {
+    text-align: left;
+  }
+}
+
+.offer__address-text {
+  margin: 0;
+
+  @media #{$tablet-width} {
+    margin-bottom: 20px;
+  }
+}
+
+.offer__address-text:last-child {
+  margin-bottom: 0;
 }
 
 .offer__map {

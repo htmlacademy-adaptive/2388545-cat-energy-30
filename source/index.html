@@ -83,43 +83,45 @@
       </section>
       <section class="example">
         <div class="example__wrapper">
-          <h2 class="example__title title-section">Живой пример</h2>
-          <p class="example__content">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__stats-wrapper">
-            <dl class="example__stats example-stats">
-              <div class="example-stats__item">
-                <dt class="example-stats__number">5 кг</dt>
-                <dd class="example-stats__description">Снижение веса</dd>
-              </div>
-              <div class="example-stats__item">
-                <dt class="example-stats__number">60 дней</dt>
-                <dd class="example-stats__description">Затрачено времени</dd>
-              </div>
-            </dl>
-            <p class="example__result">
-              <span class="example__result-description">Затраты на питание:</span>
-              <span class="example__result-number">15 000&nbsp;Руб.</span>
+          <div class="example__content">
+            <h2 class="example__title title-section">Живой пример</h2>
+            <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без&nbsp;изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__stats-wrapper">
+              <dl class="example__stats example-stats">
+                <div class="example-stats__item">
+                  <dt class="example-stats__number">5 кг</dt>
+                  <dd class="example-stats__description">Снижение веса</dd>
+                </div>
+                <div class="example-stats__item">
+                  <dt class="example-stats__number">60 дней</dt>
+                  <dd class="example-stats__description">Затрачено времени</dd>
+                </div>
+              </dl>
+              <p class="example__result">
+                <span class="example__result-description">Затраты на питание:</span>
+                <span class="example__result-number">15 000&nbsp;Руб.</span>
+            </div>
           </div>
-        </div>
-        <div class="example__slider">
-          <div class="slider">
-            <ul class="slider__list">
-              <li class="slider__screen slider__screen--before">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/before-tablet@1x.png 1x, images/slider/before-tablet@2x.png 2x">
-                  <img class="slider__image" src="images/slider/before@1x.png" srcset="images/slider/before@2x.png 2x" width="280" height="256" alt="Упитанный кот на обычном корме" >
-                </picture>
-              </li>
-              <li class="slider__screen slider__screen--after">
-                <picture>
-                  <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/after-tablet@1x.png 1x, images/slider/after-tablet@2x.png 2x">
-                  <img class="slider__image" src="images/slider/after@1x.png" srcset="images/slider/after@2x.png 2x" width="280" height="256" alt="Подтянутый кот на корме Cat Energy Slim">
-                </picture>
-              </li>
-            </ul>
-            <button class="slider__toggle" type="button">
-              <span class="visually-hidden">Переключить состояние слайдера</span>
-            </button>
+          <div class="example__slider">
+            <div class="slider">
+              <ul class="slider__list">
+                <li class="slider__screen slider__screen--before">
+                  <picture>
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/before-tablet@1x.png 1x, images/slider/before-tablet@2x.png 2x">
+                    <img class="slider__image" src="images/slider/before@1x.png" srcset="images/slider/before@2x.png 2x" width="280" height="256" alt="Упитанный кот на обычном корме" >
+                  </picture>
+                </li>
+                <li class="slider__screen slider__screen--after">
+                  <picture>
+                    <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="images/slider/after-tablet@1x.png 1x, images/slider/after-tablet@2x.png 2x">
+                    <img class="slider__image" src="images/slider/after@1x.png" srcset="images/slider/after@2x.png 2x" width="280" height="256" alt="Подтянутый кот на корме Cat Energy Slim">
+                  </picture>
+                </li>
+              </ul>
+              <button class="slider__toggle" type="button">
+                <span class="visually-hidden">Переключить состояние слайдера</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -128,15 +130,29 @@
       <section class="offer">
         <div class="offer__wrapper">
           <div class="offer__container">
-            <h2 class="offer__title">Приглашаем к&nbsp;сотрудничеству дилеров!</h2>
-            <address class="offer__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+            <h2 class="offer__title">Приглашаем <br>к&nbsp;сотрудничеству <br>дилеров!</h2>
+            <address class="offer__address">
+              <p class="offer__address-text">ул. Большая <br>Конюшенная, д. 19/8</p>
+              <p class="offer__address-text">Санкт-Петербург</p>
+            </address>
           </div>
-          <img class="offer__map" src="images/map@1x.png" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+          <div class="map">
+            <div class="map__image-wrapper">
+              <picture>
+                <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
+                <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
+                <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">
+              </picture>
+            </div>
+            <div class="map__iframe-wrapper">
+              <!-- <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="320" height="362" allowfullscreen title="Офис компании по адресу набережная реки Карповки, 5, литера П, Санкт-Петербург"></iframe> -->
+            </div>
+          </div>
         </div>
       </section>
       <div class="footer__contacts">
-        <a class="logo-text" href="#">
-          <img class="logo-text__image footer__logo-text" src="images/logo/footer-logo.svg" width="128" height="24" alt="Название магазина Cat-energy.">
+        <a class="logo-text footer__logo-text" href="#">
+          <img class="logo-text__image" src="images/logo/footer-logo.svg" width="128" height="24" alt="Название магазина Cat-energy.">
         </a>
         <section class="social footer__social">
           <h2 class="visually-hidden">Контакты в социальных сетях.</h2>
