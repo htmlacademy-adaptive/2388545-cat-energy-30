@@ -92,7 +92,8 @@
 
   @media #{$tablet-width} {
     position: absolute;
-    top: calc(100% - 60px);
+    margin: 0 auto;
+    top: calc(100% - 30px);
     left: 50%;
     transform: translateX(-50%);
     width: 709px;
@@ -162,5 +163,9 @@
     display: inline-block;
     align-self: flex-start;
     z-index: 1;
+  }
+
+  @media #{$desktop-width} {
+    max-width: 45%;
   }
 }

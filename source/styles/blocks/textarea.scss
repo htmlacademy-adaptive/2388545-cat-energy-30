@@ -1,10 +1,16 @@
 .textarea {
   resize: none;
   box-sizing: border-box;
-  width: calc(100% - 20px * 2);
+  width: calc(100% - $mobile-side * 2);
   padding: 10px 10px 18px 15px;
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+
+  @media #{$tablet-width} {
+    width: calc(100% - 70px * 2);
+    padding: 10px 10px 15px 20px;
+    font-size: 20px;
+  }
 }

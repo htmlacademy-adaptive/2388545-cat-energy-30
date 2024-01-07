@@ -5,4 +5,9 @@
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media #{$tablet-width} {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

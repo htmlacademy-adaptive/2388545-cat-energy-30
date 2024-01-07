@@ -10,7 +10,7 @@
 
   &::before {
     position: absolute;
-    top: 14px;
+    top: 0.6em;
     left: 0;
     content: "";
     width: 100%;
@@ -18,9 +18,23 @@
     background-color: $basic-green;
     z-index: -1;
   }
+
+  @media #{$tablet-width} {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.title-with-line br {
+  @media #{$tablet-width} {
+    display: none;
+  }
 }
 
 .title-with-line__text {
+  --left-position: -20px;
+  --width-back: calc(100% + 40px);
+
   position: relative;
   display: inline-block;
   left: 20px;
@@ -28,11 +42,18 @@
   &::before {
     position: absolute;
     top: 0;
-    left: -20px;
+    left: var(--left-position);
     content: "";
-    width: calc(100% + 40px);
+    width: var(--width-back);
     height: 100%;
     background-color: #ffffff;
     z-index: -1;
+  }
+
+  @media #{$tablet-width} {
+    --left-position: -40px;
+    --width-back: calc(100% + 80px);
+
+    left: 70px;
   }
 }

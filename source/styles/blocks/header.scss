@@ -13,8 +13,12 @@
   }
 
   @media #{$tablet-width} {
-    padding-top: 0;
+    padding: 25px 0 29px;
     background-color: transparent;
+  }
+
+  @media #{$desktop-width} {
+    padding: 55px 0 25px;
   }
 }
 
@@ -38,7 +42,6 @@
 .header__wrapper {
   @media #{$tablet-width} {
     margin: 0 auto;
-    padding: 25px 0 29px;
     width: calc(100% - 2 * $tablet-side);
     max-width: $max-content-width;
     display: flex;
@@ -47,8 +50,6 @@
   }
 
   @media #{$desktop-width} {
-    margin: 0 auto;
-    padding: 55px 0 25px;
     width: calc(100% - 2 * $desktop-side);
   }
 }
