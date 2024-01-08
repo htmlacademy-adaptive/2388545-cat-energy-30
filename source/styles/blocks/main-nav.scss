@@ -102,6 +102,11 @@
     padding: 22px 1px 21px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.index .main-nav__link {
+  @media #{$desktop-width} {
     color: #ffffff;
   }
 }
