@@ -1,0 +1,12 @@
+.logo-text {
+  display: flex;
+}
+
+.logo-text__image {
+  display: block;
+  margin: auto;
+
+  @media #{$tablet-width} {
+    margin: 0;
+  }
+}

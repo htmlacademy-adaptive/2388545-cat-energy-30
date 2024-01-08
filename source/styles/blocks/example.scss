@@ -1,23 +1,89 @@
 .example {
+  position: relative;
   background-color: #eaeaea;
+
+  &::before {
+    @media #{$desktop-width} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 135px;
+      background-color: #ffffff;
+    }
+  }
+
+  @media #{$tablet-only} {
+    background-color: #ffffff;
+  }
+
+  @media #{$desktop-width} {
+    padding: 0 $desktop-side 45px;
+  }
 }
 
 .example__wrapper {
   margin: auto;
-  padding: 22px 20px 0;
-}
+  max-width: $max-content-width;
 
-.example__title {
-  @include title-mobile;
-  margin-bottom: 41px;
+  @media #{$desktop-width} {
+    display: flex;
+    gap: 225px;
+    justify-content: space-between;
+  }
 }
 
 .example__content {
+  margin: auto;
+  padding: 25px $mobile-side 0;
+
+  @media #{$tablet-width} {
+    padding: 47px $tablet-side 0;
+  }
+
+  @media #{$desktop-width} {
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+  }
+}
+
+.example__title {
+  margin-bottom: 41px;
+
+  @media #{$tablet-width} {
+    margin-bottom: 59px;
+  }
+
+  @media #{$desktop-width} {
+    margin-bottom: 145px;
+  }
+}
+
+.example__text {
   margin: 0;
+}
+
+.example__stats-wrapper {
+  @media #{$tablet-only} {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin: 55px 0 89px;
+  }
 }
 
 .example__stats {
   margin: 19px 0 9px;
+
+  @media #{$tablet-width} {
+    margin: 0;
+  }
+
+  @media #{$desktop-width} {
+    margin: 68px 0 46px;
+  }
 }
 
 .example__result {
@@ -28,8 +94,41 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+
+  @media #{$tablet-width} {
+    margin-top: 11px;
+    font-size: 20px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  @media #{$desktop-width} {
+    flex-direction: row;
+    gap: 66px;
+    text-align: left;
+  }
 }
 
 .example__slider {
+  position: relative;
+  background-color: #eaeaea;
   padding-bottom: 40px;
+
+  &::before {
+    @media #{$tablet-width} {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 151px;
+      background-color: #ffffff;
+    }
+  }
+
+  @media #{$tablet-only} {
+    padding-bottom: 100px;
+  }
 }

@@ -5,16 +5,21 @@
   align-items: center;
   width: 100%;
   gap: 15px;
+
+  @media #{$tablet-width} {
+    gap: 14px;
+  }
 }
 
 .input-text--email,
 .input-text--phone {
-  --mask-image: url("../../images/icons/stack.svg#input-email");
+  --right-position: 11px;
 
   &::after {
     position: absolute;
-    top: 13px;
-    right: 11px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: var(--right-position);
     content: "";
     width: 20px;
     height: 20px;
@@ -24,7 +29,13 @@
   }
 }
 
+.input-text--email {
+  --right-position: 14px;
+  --mask-image: url("../../images/icons/stack.svg#input-email");
+}
+
 .input-text--phone {
+  --right-position: 14px;
   --mask-image: url("../../images/icons/stack.svg#input-phone");
 }
 
@@ -32,6 +43,10 @@
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
+
+  @media #{$tablet-width} {
+    font-size: 20px;
+  }
 }
 
 .input-text__input {
@@ -43,6 +58,12 @@
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+
+  @media #{$tablet-width} {
+    padding: 14px 18px;
+    height: 52px;
+    font-size: 20px;
+  }
 }
 
 .input-text__input--email {

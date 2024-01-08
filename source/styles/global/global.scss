@@ -1,8 +1,19 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
+html {
+  height: 100%;
+}
+
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: $primary-font;
   margin: 0;
   font-size: 14px;
   line-height: 18px;
-  //width: 320px;
+
+  @media #{$tablet-width} {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
