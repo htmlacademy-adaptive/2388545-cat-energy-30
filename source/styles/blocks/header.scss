@@ -22,7 +22,7 @@
   }
 }
 
-.header--index {
+.header--above-hero {
   &::before {
     @media #{$desktop-width} {
       position: absolute;
