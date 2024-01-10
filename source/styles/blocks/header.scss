@@ -39,6 +39,10 @@
   }
 }
 
+.header--inner {
+  border-bottom: $border-grey;
+}
+
 .header__wrapper {
   @media #{$tablet-width} {
     margin: 0 auto;

@@ -1,14 +1,22 @@
 .products-extra {
-  padding: 25px 0 35px;
+  padding: 26px $mobile-side 35px;
+
+  @media #{$tablet-width} {
+    padding: 26px $tablet-side 74px;
+  }
 }
 
 .products-extra__title {
   margin-bottom: 34px;
+
+  @media #{$tablet-width} {
+    margin: 0 40px 80px;
+  }
 }
 
 .products-extra__list {
   margin: 0;
-  padding: 0 20px;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -21,5 +29,9 @@
 }
 
 .products-extra__gift {
-  margin: 35px 20px 0;
+  margin: 35px 0 0;
+
+  @media #{$tablet-width} {
+    margin: 70px 0 0;
+  }
 }
