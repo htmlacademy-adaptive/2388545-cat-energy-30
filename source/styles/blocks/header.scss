@@ -31,9 +31,7 @@
       content: "";
       width: 50%;
       height: calc(100% - 100px);
-      background-image: linear-gradient(to right, rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), linear-gradient(to right, #4e4d52 40%, #3f3e43 60%);
-      background-repeat: no-repeat, repeat-y;
-      background-size: cover;
+      background-color: #63a73b;
       z-index: -1;
     }
   }

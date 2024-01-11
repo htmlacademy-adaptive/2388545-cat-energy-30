@@ -4,10 +4,17 @@
 
 .offer__wrapper {
   position: relative;
+}
 
+.offer__position {
   @media #{$desktop-width} {
+    position: absolute;
     margin: auto;
-    max-width: $max-content-width;
+    min-width: 1440px;
+    max-width: calc(#{$max-content-width} + #{$desktop-side} * 2);
+    height: 400px;
+    left: 0;
+    right: 0;
   }
 }
 

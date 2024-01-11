@@ -4,7 +4,7 @@
   gap: 48px;
   justify-items: center;
   align-items: center;
-  padding: 60px 50px 43px;
+  padding: 60px 25px 43px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
@@ -25,7 +25,7 @@
     background-size: 78px 80px;
   }
 
-  @media #{$tablet-width} {
+  @media #{$tablet-only} {
     grid-template-columns: 80px 206px;
     gap: 20px 48%;
     justify-items: start;
@@ -34,5 +34,10 @@
     background-size: auto 100%, 707px 714px;
     background-position: center, bottom -210px center;
     text-align: left;
+  }
+
+  @media #{$desktop-width} {
+    box-sizing: border-box;
+    width: 245px;
   }
 }

@@ -43,11 +43,19 @@
 
   @media #{$tablet-width} {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 23px;
     align-items: end;
     background-color: #ffffff;
     padding: 23px 38px 28px;
+  }
+
+  @media #{$desktop-width} {
+    grid-template-columns: 1fr 32% 244px;
+    gap: 37px;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 16px;
   }
 }
 
@@ -71,6 +79,11 @@
 
   @media #{$tablet-width} {
     width: initial;
+    min-height: 210px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 0;
   }
 }
 
@@ -103,6 +116,10 @@
     line-height: 24px;
     text-align: center;
   }
+
+  @media #{$tablet-width} {
+    --title-margin: 6px 0 18px;
+  }
 }
 
 .card__title br {
@@ -132,6 +149,10 @@
     justify-self: end;
     margin-right: 3px;
   }
+
+  @media #{$desktop-width} {
+    width: 100%;
+  }
 }
 
 .card__item {
@@ -144,12 +165,20 @@
     border-bottom: 1px solid #cdcdcd;
     padding: 7px 0 4px;
   }
+
+  @media #{$desktop-width} {
+    padding: 6px 0 6px;
+  }
 }
 
 .card--extra .card__item {
   @media #{$tablet-width} {
     padding: 0;
     border-bottom: none;
+  }
+
+  @media #{$desktop-width} {
+    margin-top: 7px;
   }
 }
 
@@ -169,6 +198,11 @@
     min-width: 81px;
     text-align: right;
   }
+
+  @media #{$desktop-width} {
+    min-width: 41px;
+    text-align: left;
+  }
 }
 
 .card__button {
@@ -185,8 +219,12 @@
 }
 
 .card--extra .card__button {
-  @media #{$tablet-width} {
+  @media #{$tablet-only} {
     grid-column: 1 / -1;
+    margin-top: 0;
+  }
+
+  @media #{$desktop-width} {
     margin-top: 0;
   }
 }
