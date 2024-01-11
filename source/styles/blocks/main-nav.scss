@@ -1,3 +1,9 @@
+.main-nav {
+  @media #{$desktop-width} {
+    max-width: 50%;
+  }
+}
+
 .main-nav__toggle {
   position: absolute;
   top: 20px;
@@ -8,18 +14,71 @@
   background-image: url("../../images/icons/stack.svg#burger");
   background-repeat: no-repeat;
   background-color: transparent;
+  cursor: pointer;
+
+  @media #{$tablet-width} {
+    display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__toggle {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  background-image: url("../../images/icons/stack.svg#cross");
+  width: 18px;
+  height: 18px;
 }
 
 .main-nav__list {
-  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: #ffffff;
+
+  @media #{$tablet-width} {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0 26px;
+  }
+
+  @media #{$desktop-width} {
+    gap: 0 32px;
+    background-color: transparent;
+  }
+}
+
+.main-nav--closed .main-nav__list {
+  @media #{$mobile-only} {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__list {
+  @media #{$mobile-only} {
+    position: absolute;
+    top: 64px;
+    left: 0;
+    width: 100%;
+  }
+}
+
+.main-nav--nojs .main-nav__list {
+  position: static;
 }
 
 .main-nav__item {
   padding: 12px 0 14px;
   border-top: 1px solid #e6e6e6;
+
+  @media #{$tablet-width} {
+    padding: 0;
+    border: none;
+  }
 }
 
 .main-nav__link {
@@ -32,4 +91,34 @@
   text-decoration: none;
   text-align: center;
   color: #000000;
+
+  @media #{$tablet-width} {
+    padding: 14px 4px 12px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media #{$desktop-width} {
+    padding: 22px 1px 21px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.index .main-nav__link {
+  @media #{$desktop-width} {
+    color: #ffffff;
+  }
+}
+
+.main-nav__link--current {
+  @media #{$tablet-width} {
+    text-decoration: underline;
+    text-decoration-color: $basic-green;
+    text-underline-offset: 12px;
+  }
+
+  @media #{$desktop-width} {
+    text-decoration-color: #ffffff;
+  }
 }

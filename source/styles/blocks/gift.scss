@@ -1,14 +1,43 @@
 .gift {
-  display: block;
-  padding: 187px 50px 43px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  justify-items: center;
+  align-items: center;
+  padding: 60px 25px 43px;
   text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-decoration: none;
   background-color: #acacac;
-  background-image: url("../../images/icons/stack.svg#icon-gift"), linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../../images/catalog/gift-case@1x.jpg");
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/catalog/gift-case@1x.jpg") type("image/jpeg") 1x, url("../../images/catalog/gift-case@2x.jpg") type("image/jpeg") 2x);
   background-repeat: no-repeat;
-  background-size: 78px 80px, auto 100%, auto 100%;
-  background-position: top 59px center, center, center;
+  background-size: auto 100%, auto 100%;
+  background-position: center, center;
+
+  &::before {
+    content: "";
+    width: 78px;
+    height: 80px;
+    background-image: url("../../images/icons/stack.svg#icon-gift");
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+  }
+
+  @media #{$tablet-only} {
+    grid-template-columns: 80px 206px;
+    gap: 20px 48%;
+    justify-items: start;
+    padding: 59px 78px 61px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/catalog/gift-case-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/catalog/gift-case-tablet@2x.jpg") type("image/jpeg") 2x);
+    background-size: auto 100%, 707px 714px;
+    background-position: center, bottom -210px center;
+    text-align: left;
+  }
+
+  @media #{$desktop-width} {
+    box-sizing: border-box;
+    width: 245px;
+  }
 }

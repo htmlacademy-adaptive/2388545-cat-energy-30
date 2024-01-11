@@ -9,13 +9,18 @@
 @import "./blocks/button.scss";
 @import "./blocks/inner-title.scss";
 @import "./blocks/title-with-line.scss";
+@import "./blocks/title-section.scss";
 @import "./blocks/inner-text.scss";
 @import "./blocks/input-text.scss";
 @import "./blocks/control.scss";
 @import "./blocks/textarea.scss";
 @import "./blocks/card.scss";
+@import "./blocks/show-more.scss";
+
 
 /* BLOCKS */
+@import "./blocks/page.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/header.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/hero.scss";
@@ -26,11 +31,12 @@
 @import "./blocks/slider.scss";
 @import "./blocks/footer.scss";
 @import "./blocks/offer.scss";
+@import "./blocks/map.scss";
+@import "./blocks/logo-text.scss";
 @import "./blocks/social.scss";
 @import "./blocks/htmlacademy.scss";
 @import "./blocks/group.scss";
 @import "./blocks/program-choose.scss";
-@import "./blocks/page-catalog.scss";
 @import "./blocks/products-main.scss";
 @import "./blocks/products-extra.scss";
 @import "./blocks/gift.scss";

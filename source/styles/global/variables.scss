@@ -1,4 +1,5 @@
-/* здесь используйте глобальные переменные */
+// Colors
+
 $basic-green: #68b738;
 $basic-grey: #f2f2f2;
 $special-grey: #cdcdcd;
@@ -6,3 +7,25 @@ $special-light-grey: #ebebeb;
 $special-dark-grey: #222222;
 $small-text-color: #444444;
 $border-grey: 1px solid #d9d9d9;
+
+
+// Breakpoint
+
+$breakpoint-desktop: 1440px;
+$breakpoint-tablet: 768px;
+$breakpoint-gap: 0.02px;
+
+// Viewports
+
+$mobile-only: "(max-width: #{$breakpoint-tablet - $breakpoint-gap})";
+$tablet-width: "(min-width: #{$breakpoint-tablet})";
+$tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap})";
+$desktop-width: "(min-width: #{$breakpoint-desktop})";
+
+
+// Adaptive sizes
+
+$max-content-width: 1600px;
+$mobile-side: 20px;
+$tablet-side: 30px;
+$desktop-side: 110px;

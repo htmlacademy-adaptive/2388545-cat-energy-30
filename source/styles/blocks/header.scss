@@ -1,16 +1,67 @@
 .header {
   position: relative;
-  padding-top: 65px;
+  padding-top: 64px;
   background-color: #ffffff;
   color: #000000;
-  background-image: url("../../images/logo/footer-logo.svg");
-  background-size: 101px auto;
-  background-repeat: no-repeat;
-  background-position: top 22px center;
+  z-index: 2;
+
+  @media #{$mobile-only} {
+    background-image: url("../../images/logo/footer-logo.svg");
+    background-size: 101px auto;
+    background-repeat: no-repeat;
+    background-position: top 22px center;
+  }
+
+  @media #{$tablet-width} {
+    padding: 25px 0 29px;
+    background-color: transparent;
+  }
+
+  @media #{$desktop-width} {
+    padding: 55px 0 25px;
+  }
+}
+
+.header--above-hero {
+  &::before {
+    @media #{$desktop-width} {
+      position: absolute;
+      top: 0;
+      right: 0;
+      content: "";
+      width: 50%;
+      height: calc(100% - 100px);
+      background-color: #63a73b;
+      z-index: -1;
+    }
+  }
+}
+
+.header--inner {
+  border-bottom: $border-grey;
+}
+
+.header__wrapper {
+  @media #{$tablet-width} {
+    margin: 0 auto;
+    width: calc(100% - 2 * $tablet-side);
+    max-width: $max-content-width;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  @media #{$desktop-width} {
+    width: calc(100% - 2 * $desktop-side);
+  }
 }
 
 .header__logo {
   position: absolute;
   top: 13px;
-  left: 20px;
+  left: $mobile-side;
+
+  @media #{$tablet-width} {
+    position: static;
+  }
 }
