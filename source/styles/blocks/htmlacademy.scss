@@ -6,6 +6,10 @@
   color: #444444;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media #{$tablet-width} {
     justify-content: flex-end;
     gap: 23px;
@@ -22,4 +26,9 @@
   width: 27px;
   height: 34px;
   fill: #666666;
+}
+
+.htmlacademy__link:focus-visible .htmlacademy__logo,
+.htmlacademy__link:hover .htmlacademy__logo {
+  fill: $basic-green;
 }

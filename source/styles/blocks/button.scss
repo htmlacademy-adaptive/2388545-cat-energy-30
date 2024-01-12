@@ -11,6 +11,25 @@
   text-decoration: none;
   border: none;
   background-color: $basic-green;
+  cursor: pointer;
+
+  &:focus-visible {
+    background-color: #5eaa2f;
+  }
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
 
   @media #{$tablet-width} {
     padding: 14px;
@@ -19,7 +38,35 @@
   }
 }
 
+.button--disabled {
+  opacity: 0.2;
+  pointer-events: none;
+}
+
 .button--secondary {
   background-color: $basic-grey;
   color: $small-text-color;
+
+  &:focus-visible {
+    background-color: #ebebeb;
+  }
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    background-color: #ebebeb;
+    color: $small-text-color;
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+}
+
+.button--secondary.button--disabled {
+  opacity: 0.2;
+  cursor: default;
 }

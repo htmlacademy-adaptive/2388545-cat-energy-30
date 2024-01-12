@@ -123,6 +123,32 @@
     cursor: pointer;
   }
 
+  &:focus-visible,
+  &:focus-visible::after,
+  &:hover,
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:focus-visible::before,
+  &:hover::before {
+    border: 2px solid $basic-green;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: rgb(94, 170, 47, 0.6);
+  }
+
+  &:active::before {
+    border: 2px solid rgba(94, 170, 47, 0.6);
+  }
+
+  &:disabled {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+
   @media #{$tablet-width} {
     height: 512px;
   }

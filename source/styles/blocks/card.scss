@@ -5,7 +5,7 @@
   --line-height-small: inherit;
   --font-size-data: 12px;
   --line-height-data: 16px;
-  --button-margin-top: 20px;
+  --button-margin-top: 12px;
 
   position: relative;
   padding: 20px $mobile-side 25px;
@@ -117,7 +117,7 @@
     text-align: center;
   }
 
-  @media #{$tablet-width} {
+  @media #{$desktop-width} {
     --title-margin: 6px 0 18px;
   }
 }

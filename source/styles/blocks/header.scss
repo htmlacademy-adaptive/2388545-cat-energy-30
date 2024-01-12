@@ -65,3 +65,9 @@
     position: static;
   }
 }
+
+.header__nav {
+  @media #{$desktop-width} {
+    max-width: 45%;
+  }
+}

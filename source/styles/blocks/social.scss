@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
+  gap: 22px;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -15,6 +15,7 @@
   display: block;
   width: 28px;
   height: 22px;
+  padding: 1px;
 
   &::after {
     position: absolute;
@@ -27,6 +28,15 @@
     mask-image: var(--bgi);
     mask-repeat: no-repeat;
     background-color: #666666;
+  }
+
+  &:focus-visible::after,
+  &:hover::after {
+    background-color: $basic-green;
+  }
+
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

@@ -6,6 +6,18 @@
   display: block;
   margin: auto;
 
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media #{$tablet-width} {
     margin: 0;
   }

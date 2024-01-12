@@ -41,7 +41,7 @@
     gap: 60px 8%;
   }
 
-  @media #{$tablet-width} {
+  @media #{$desktop-width} {
     grid-template-columns: repeat(4, 1fr);
     gap: 65px 80px;
     margin: 0 auto;
