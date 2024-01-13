@@ -39,6 +39,16 @@
   --mask-image: url("../../images/icons/stack.svg#input-phone");
 }
 
+.input-text--email:has(input:focus-visible)::after,
+.input-text--phone:has(input:focus-visible)::after {
+  background-color: $basic-green;
+}
+
+.input-text--email:has(input:invalid:not(:placeholder-shown))::after,
+.input-text--phone:has(input:invalid:not(:placeholder-shown))::after {
+  background-color: #ff8282;
+}
+
 .input-text__label {
   font-family: $secondary-font;
   font-size: 16px;
@@ -58,6 +68,28 @@
   font-size: 16px;
   text-transform: uppercase;
   border: 1px solid #e7e7e7;
+  cursor: pointer;
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+  }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    outline: 2px solid #ff8282;
+  }
+
+  &:disabled {
+    pointer-events: none;
+    color: rgb(68, 68, 68, 0.2);
+  }
 
   @media #{$tablet-width} {
     padding: 14px 18px;

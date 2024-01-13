@@ -25,6 +25,15 @@
     background-size: 78px 80px;
   }
 
+  &:focus-visible,
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media #{$tablet-only} {
     grid-template-columns: 80px 206px;
     gap: 20px 48%;

@@ -200,8 +200,20 @@
     transition: 0.1s ease-in-out;
   }
 
+  &:focus-visible,
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus-visible::after,
   &:hover::after {
     background-position: center right 3px;
+  }
+
+  &:active {
+    background-color: transparent;
+    color: #000000;
+    opacity: 0.3;
   }
 
   @media #{$tablet-width} {

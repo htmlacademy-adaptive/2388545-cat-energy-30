@@ -11,10 +11,11 @@
   margin: auto;
 
   @media #{$tablet-width} {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
-    padding: 57px $tablet-side;
+    gap: 20px;
+    padding: 56px $tablet-side;
   }
 
   @media #{$desktop-width} {
@@ -24,9 +25,9 @@
 
 .footer__logo-text {
   padding: 20px 0;
+  justify-self: start;
 
   @media #{$tablet-width} {
-    width: 33%;
     padding: 0;
     margin-left: 1px;
   }
@@ -38,10 +39,6 @@
     border-top: 1px solid #d9d9d9;
     border-bottom: 1px solid #d9d9d9;
   }
-
-  @media #{$tablet-width} {
-    width: 33%;
-  }
 }
 
 .footer__htmlacademy {
@@ -50,6 +47,6 @@
   }
 
   @media #{$tablet-width} {
-    width: 33%;
+    justify-self: end;
   }
 }

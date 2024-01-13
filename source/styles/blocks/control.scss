@@ -2,7 +2,7 @@
   --external-size: 28px;
   --inner-size: 20px;
   --top-position: 4px;
-  --left-position: 6px;
+  --left-position: 5px;
 
   box-sizing: border-box;
   display: inline-flex;
@@ -22,13 +22,13 @@
     content: "";
     width: var(--external-size);
     height: var(--external-size);
-    border: 1px solid $special-grey;
+    border: 1px solid #{$special-grey};
   }
 
   &::after {
     position: absolute;
-    top: 4px;
-    left: 6px;
+    top: var(--top-position);
+    left: var(--left-position);
     content: url("../../images/icons/checkbox-tick.svg");
     width: var(--inner-size);
     height: var(--inner-size);
@@ -76,4 +76,21 @@
 
 .control__input:checked + .control__label::after {
   display: block;
+}
+
+.control__input:focus + .control__label::before {
+  outline: 2px solid #444444;
+}
+
+.control__input:hover + .control__label::before {
+  border: 1px solid #bababa;
+}
+
+.control__input:active + .control__label::before {
+  opacity: 0.5;
+}
+
+.control__input:disabled + .control__label::before {
+  pointer-events: none;
+  opacity: 0.3;
 }
