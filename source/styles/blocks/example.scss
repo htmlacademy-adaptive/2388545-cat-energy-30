@@ -76,13 +76,16 @@
 
 .example__stats {
   margin: 19px 0 9px;
+  max-width: 330px;
 
   @media #{$tablet-width} {
     margin: 0;
+    max-width: 66%;
   }
 
   @media #{$desktop-width} {
     margin: 68px 0 46px;
+    max-width: initial;
   }
 }
 

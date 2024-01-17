@@ -91,10 +91,42 @@
   object-fit: contain;
 }
 
+.card__image-link {
+  display: block;
+  transition: transform 0.3s;
+
+  &:focus-visible,
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
 .card__content {
   @media #{$mobile-only} {
     width: 50%;
     max-width: 220px;
+  }
+}
+
+.card__title-link {
+  display: block;
+  text-decoration: none;
+  border-radius: 1px;
+
+  &:focus-visible {
+    outline: 2px solid #000000;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 
