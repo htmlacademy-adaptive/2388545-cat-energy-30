@@ -67,6 +67,10 @@
 }
 
 .header__nav {
+  @media #{$tablet-width} {
+    margin-right: 2px;;
+  }
+
   @media #{$desktop-width} {
     max-width: 45%;
   }
