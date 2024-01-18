@@ -25,7 +25,15 @@
     content: "";
     width: 50%;
     height: calc(100% + 143px);
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat-desktop@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat-desktop@2x.jpg") type("image/jpeg") 2x), linear-gradient(to right, #4e4d52 40%, #3f3e43 60%);
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/hero/hero-cat-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/hero/hero-cat-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/hero/hero-cat-desktop@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/hero/hero-cat-desktop@2x.jpg") type("image/jpeg") 2x
+      ),
+      linear-gradient(to right, #4e4d52 40%, #3f3e43 60%);
     background-repeat: no-repeat;
     background-color: #4a494e;
     background-position: center, right -321px bottom;
@@ -48,7 +56,14 @@
   box-sizing: border-box;
   padding: 27px 20px 0;
   min-height: 302px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/hero/hero-cat@1x.jpg") type("image/jpeg") 1x, url("../../images/hero/hero-cat@2x.jpg") type("image/jpeg") 2x);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/hero/hero-cat@1x.webp") type("image/webp") 1x,
+      url("../../images/hero/hero-cat@2x.webp") type("image/webp") 2x,
+      url("../../images/hero/hero-cat@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/hero/hero-cat@2x.jpg") type("image/jpeg") 2x
+    );
   background-size: auto calc(100% - 135px), auto calc(100% - 135px);
   background-repeat: no-repeat;
   background-position: top center, top center;
@@ -86,7 +101,13 @@
   content: "";
   width: 280px;
   height: 270px;
-  background-image: image-set(url("../../images/hero/hero-product@1x.png") type("image/png") 1x, url("../../images/hero/hero-product@2x.png") type("image/png") 2x);
+  background-image:
+    image-set(
+      url("../../images/hero/hero-product@1x.webp") type("image/webp") 1x,
+      url("../../images/hero/hero-product@2x.webp") type("image/webp") 2x,
+      url("../../images/hero/hero-product@1x.png") type("image/png") 1x,
+      url("../../images/hero/hero-product@2x.png") type("image/png") 2x
+    );
   z-index: 2;
 
   @media #{$tablet-width} {
@@ -97,7 +118,13 @@
     transform: translateX(-50%);
     width: 709px;
     height: 609px;
-    background-image: image-set(url("../../images/hero/hero-product-tablet@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-tablet@2x.png") type("image/png") 2x);
+    background-image:
+      image-set(
+        url("../../images/hero/hero-product-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/hero/hero-product-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/hero/hero-product-tablet@1x.png") type("image/png") 1x,
+        url("../../images/hero/hero-product-tablet@2x.png") type("image/png") 2x
+      );
   }
 
   @media #{$desktop-width} {
@@ -107,7 +134,13 @@
     top: 0;
     width: 552px;
     height: 499px;
-    background-image: image-set(url("../../images/hero/hero-product-desktop@1x.png") type("image/png") 1x, url("../../images/hero/hero-product-desktop@2x.png") type("image/png") 2x);
+    background-image:
+      image-set(
+        url("../../images/hero/hero-product-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/hero/hero-product-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/hero/hero-product-desktop@1x.png") type("image/png") 1x,
+        url("../../images/hero/hero-product-desktop@2x.png") type("image/png") 2x
+      );
     z-index: -1;
   }
 }

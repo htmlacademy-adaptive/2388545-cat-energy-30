@@ -9,19 +9,21 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="header header--inner">
       <div class="header__wrapper">
-        <a class="logo-image header__logo" href="index.html">
+        <a class="header__logo logo-image" href="index.html">
           <picture>
             <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
             <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
             <img class="logo-image__image" src="images/logo/logo-mobile.svg" width="33" height="38" alt="Логотип магазина Cat-energy.">
           </picture>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
+        <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
@@ -46,14 +48,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-500@1x.png 1x, images/catalog/desktop-pro-chicken-500@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-500@1x.png 1x, images/catalog/tablet-pro-chicken-500@2x.png 2x">
-                  <img class="card__image" src="images/catalog/pro-chicken-500@1x.jpg" srcset="images/catalog/pro-chicken-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 500 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-500@1x.webp 1x, images/catalog/desktop-pro-chicken-500@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-500@1x.webp 1x, images/catalog/tablet-pro-chicken-500@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/pro-chicken-500@1x.webp 1x, images/catalog/pro-chicken-500@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-500@1x.png 1x, images/catalog/desktop-pro-chicken-500@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-500@1x.png 1x, images/catalog/tablet-pro-chicken-500@2x.png 2x">
+                    <img class="card__image" src="images/catalog/pro-chicken-500@1x.jpg" srcset="images/catalog/pro-chicken-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 500 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy PRO <br>500&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy PRO <br>500&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">500&nbsp;г</dt>
@@ -75,14 +84,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-1000@1x.png 1x, images/catalog/desktop-pro-chicken-1000@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-1000@1x.png 1x, images/catalog/tablet-pro-chicken-1000@2x.png 2x">
-                  <img class="card__image" src="images/catalog/pro-chicken-1000@1x.jpg" srcset="images/catalog/pro-chicken-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 1000 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-1000@1x.webp 1x, images/catalog/desktop-pro-chicken-1000@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-1000@1x.webp 1x, images/catalog/tablet-pro-chicken-1000@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/pro-chicken-1000@1x.webp 1x, images/catalog/pro-chicken-1000@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-chicken-1000@1x.png 1x, images/catalog/desktop-pro-chicken-1000@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-chicken-1000@1x.png 1x, images/catalog/tablet-pro-chicken-1000@2x.png 2x">
+                    <img class="card__image" src="images/catalog/pro-chicken-1000@1x.jpg" srcset="images/catalog/pro-chicken-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 1000 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy PRO <br>1000 г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy PRO <br>1000 г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">1000&nbsp;г</dt>
@@ -104,14 +120,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-500@1x.png 1x, images/catalog/desktop-pro-fish-500@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-500@1x.png 1x, images/catalog/tablet-pro-fish-500@2x.png 2x">
-                  <img class="card__image" src="images/catalog/pro-fish-500@1x.jpg" srcset="images/catalog/pro-fish-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 500 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-500@1x.webp 1x, images/catalog/desktop-pro-fish-500@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-500@1x.webp 1x, images/catalog/tablet-pro-fish-500@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/pro-fish-500@1x.webp 1x, images/catalog/pro-fish-500@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-500@1x.png 1x, images/catalog/desktop-pro-fish-500@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-500@1x.png 1x, images/catalog/tablet-pro-fish-500@2x.png 2x">
+                    <img class="card__image" src="images/catalog/pro-fish-500@1x.jpg" srcset="images/catalog/pro-fish-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 500 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy PRO <br>500&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy PRO <br>500&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">500&nbsp;г</dt>
@@ -133,14 +156,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-1000@1x.png 1x, images/catalog/desktop-pro-fish-1000@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-1000@1x.png 1x, images/catalog/tablet-pro-fish-1000@2x.png 2x">
-                  <img class="card__image" src="images/catalog/pro-fish-1000@1x.jpg" srcset="images/catalog/pro-fish-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 1000 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-1000@1x.webp 1x, images/catalog/desktop-pro-fish-1000@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-1000@1x.webp 1x, images/catalog/tablet-pro-fish-1000@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/pro-fish-1000@1x.webp 1x, images/catalog/pro-fish-1000@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-pro-fish-1000@1x.png 1x, images/catalog/desktop-pro-fish-1000@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-pro-fish-1000@1x.png 1x, images/catalog/tablet-pro-fish-1000@2x.png 2x">
+                    <img class="card__image" src="images/catalog/pro-fish-1000@1x.jpg" srcset="images/catalog/pro-fish-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy PRO 1000 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy PRO <br>1000&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy PRO <br>1000&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">1000&nbsp;г</dt>
@@ -162,14 +192,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-500@1x.png 1x, images/catalog/desktop-slim-buckwheat-500@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-500@1x.png 1x, images/catalog/tablet-slim-buckwheat-500@2x.png 2x">
-                  <img class="card__image" src="images/catalog/slim-buckwheat-500@1x.jpg" srcset="images/catalog/slim-buckwheat-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 500 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-500@1x.webp 1x, images/catalog/desktop-slim-buckwheat-500@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-500@1x.webp 1x, images/catalog/tablet-slim-buckwheat-500@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/slim-buckwheat-500@1x.webp 1x, images/catalog/slim-buckwheat-500@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-500@1x.png 1x, images/catalog/desktop-slim-buckwheat-500@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-500@1x.png 1x, images/catalog/tablet-slim-buckwheat-500@2x.png 2x">
+                    <img class="card__image" src="images/catalog/slim-buckwheat-500@1x.jpg" srcset="images/catalog/slim-buckwheat-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 500 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy Slim <br>500&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy Slim <br>500&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">500&nbsp;г</dt>
@@ -191,14 +228,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-1000@1x.png 1x, images/catalog/desktop-slim-buckwheat-1000@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-1000@1x.png 1x, images/catalog/tablet-slim-buckwheat-1000@2x.png 2x">
-                  <img class="card__image" src="images/catalog/slim-buckwheat-1000@1x.jpg" srcset="images/catalog/slim-buckwheat-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 1000 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-1000@1x.webp 1x, images/catalog/desktop-slim-buckwheat-1000@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-1000@1x.webp 1x, images/catalog/tablet-slim-buckwheat-1000@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/slim-buckwheat-1000@1x.webp 1x, images/catalog/slim-buckwheat-1000@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-buckwheat-1000@1x.png 1x, images/catalog/desktop-slim-buckwheat-1000@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-buckwheat-1000@1x.png 1x, images/catalog/tablet-slim-buckwheat-1000@2x.png 2x">
+                    <img class="card__image" src="images/catalog/slim-buckwheat-1000@1x.jpg" srcset="images/catalog/slim-buckwheat-1000@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 1000 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy Slim <br>1000&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy Slim <br>1000&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">1000&nbsp;г</dt>
@@ -220,14 +264,21 @@
           <li class="products-main__item card">
             <div class="card__wrapper">
               <div class="card__image-container">
-                <picture>
-                  <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-rice-500@1x.png 1x, images/catalog/desktop-slim-rice-500@2x.png 2x">
-                  <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-rice-500@1x.png 1x, images/catalog/tablet-slim-rice-500@2x.png 2x">
-                  <img class="card__image" src="images/catalog/slim-rice-500@1x.jpg" srcset="images/catalog/slim-rice-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 500 г.">
-                </picture>
+                <a class="card__image-link" href="#">
+                  <picture>
+                    <source width="169" height="210" type="image/webp" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-rice-500@1x.webp 1x, images/catalog/desktop-slim-rice-500@2x.webp 2x">
+                    <source width="200" height="210" type="image/webp" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-rice-500@1x.webp 1x, images/catalog/tablet-slim-rice-500@2x.webp 2x">
+                    <source width="120" height="107" type="image/webp" srcset="images/catalog/slim-rice-500@1x.webp 1x, images/catalog/slim-rice-500@2x.webp 2x">
+                    <source width="169" height="210" type="image/png" media="(min-width: 1440px)" srcset="images/catalog/desktop-slim-rice-500@1x.png 1x, images/catalog/desktop-slim-rice-500@2x.png 2x">
+                    <source width="200" height="210" type="image/png" media="(min-width: 768px)" srcset="images/catalog/tablet-slim-rice-500@1x.png 1x, images/catalog/tablet-slim-rice-500@2x.png 2x">
+                    <img class="card__image" src="images/catalog/slim-rice-500@1x.jpg" srcset="images/catalog/slim-rice-500@2x.jpg 2x" width="120" height="107" alt="Cat Energy Slim 500 г.">
+                  </picture>
+                </a>
               </div>
               <div class="card__content">
-                <h3 class="card__title">Cat Energy Slim <br>500&nbsp;г</h3>
+                <a class="card__title-link" href="#">
+                  <h3 class="card__title">Cat Energy Slim <br>500&nbsp;г</h3>
+                </a>
                 <dl class="card__data">
                   <div class="card__item">
                     <dt class="card__number">500&nbsp;г</dt>
@@ -316,9 +367,12 @@
               </address>
             </div>
           </div>
-          <div class="map">
+          <div class="map offer__map">
             <div class="map__image-wrapper">
               <picture>
+                <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+                <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+                <source width="320" height="362" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
                 <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
                 <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
                 <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">

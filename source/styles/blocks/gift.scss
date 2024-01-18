@@ -11,7 +11,14 @@
   color: #ffffff;
   text-decoration: none;
   background-color: #acacac;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/catalog/gift-case@1x.jpg") type("image/jpeg") 1x, url("../../images/catalog/gift-case@2x.jpg") type("image/jpeg") 2x);
+  background-image:
+    linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+    image-set(
+      url("../../images/catalog/gift-case@1x.webp") type("image/webp") 1x,
+      url("../../images/catalog/gift-case@2x.webp") type("image/webp") 2x,
+      url("../../images/catalog/gift-case@1x.jpg") type("image/jpeg") 1x,
+      url("../../images/catalog/gift-case@2x.jpg") type("image/jpeg") 2x
+    );
   background-repeat: no-repeat;
   background-size: auto 100%, auto 100%;
   background-position: center, center;
@@ -39,7 +46,14 @@
     gap: 20px 48%;
     justify-items: start;
     padding: 59px 78px 61px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), image-set(url("../../images/catalog/gift-case-tablet@1x.jpg") type("image/jpeg") 1x, url("../../images/catalog/gift-case-tablet@2x.jpg") type("image/jpeg") 2x);
+    background-image:
+      linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)),
+      image-set(
+        url("../../images/catalog/gift-case-tablet@1x.webp") type("image/webp") 1x,
+        url("../../images/catalog/gift-case-tablet@2x.webp") type("image/webp") 2x,
+        url("../../images/catalog/gift-case-tablet@1x.jpg") type("image/jpeg") 1x,
+        url("../../images/catalog/gift-case-tablet@2x.jpg") type("image/jpeg") 2x
+      );
     background-size: auto 100%, 707px 714px;
     background-position: center, bottom -210px center;
     text-align: left;

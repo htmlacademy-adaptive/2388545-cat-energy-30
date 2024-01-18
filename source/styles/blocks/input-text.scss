@@ -62,6 +62,7 @@
 .input-text__input {
   box-sizing: border-box;
   flex-grow: 1;
+  width: 150px;
   height: 45px;
   padding: 14px 13px;
   font-family: $secondary-font;
@@ -78,10 +79,6 @@
     border: 1px solid #cdcdcd;
   }
 
-  &:active {
-    opacity: 0.8;
-  }
-
   &:invalid:not(:placeholder-shown) {
     outline: 2px solid #ff8282;
   }
@@ -95,13 +92,24 @@
     padding: 14px 18px;
     height: 52px;
     font-size: 20px;
+    width: initial;
   }
 }
 
 .input-text__input--email {
   padding-right: 35px;
+  min-width: 170px;
+
+  @media #{$tablet-width} {
+    min-width: 250px;
+  }
 }
 
 .input-text__input--phone {
   padding-right: 35px;
+  min-width: 170px;
+
+  @media #{$tablet-width} {
+    min-width: 250px;
+  }
 }

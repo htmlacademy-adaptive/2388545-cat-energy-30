@@ -9,12 +9,14 @@
     <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/lato/lato-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body form">
     <header class="header header--inner">
       <div class="header__wrapper">
-        <a class="logo-image header__logo" href="index.html">
+        <a class="header__logo logo-image" href="index.html">
           <picture>
             <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo/logo-desktop.svg">
             <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo/logo-tablet.svg">
@@ -40,7 +42,7 @@
       </div>
     </header>
     <main class="main-container">
-      <section class="program-choose form__program-choose">
+      <section class="program-choose">
         <h1 class="program-choose__title inner-title">Подбор программы</h1>
         <p class="program-choose__text inner-text">Заполните анкету, и мы подберем <br>программу питания для вашего кота</p>
         <form class="program-choose__form" action="https://echo.htmlacademy.ru/" method="get">
@@ -85,7 +87,7 @@
             <h2 class="group__title title-with-line">Контактные данные <br>(владельца кота)</h2>
             <ul class="group__list group__list--contacts">
               <li class="group__item input-text input-text--email">
-                <label class="input-text__label" for="email">E-mail:*</label>
+                <label class="input-text__label" for="email">E&#8209;mail:*</label>
                 <input class="input-text__input input-text__input--email" type="email" name="email" id="email" placeholder="Ваш e-mail" value="kuklachev@gmail.com" required>
               </li>
               <li class="group__item input-text input-text--phone">
@@ -140,9 +142,12 @@
               </address>
             </div>
           </div>
-          <div class="map">
+          <div class="map offer__map">
             <div class="map__image-wrapper">
               <picture>
+                <source width="1440" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.webp 1x, images/map/map-desktop@2x.webp 2x">
+                <source width="768" height="400" type="image/webp" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.webp 1x, images/map/map-tablet@2x.webp 2x">
+                <source width="320" height="362" type="image/webp" srcset="images/map/map-mobile@1x.webp 1x, images/map/map-mobile@2x.webp 2x">
                 <source width="1440" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/map/map-desktop@1x.png 1x, images/map/map-desktop@2x.png 2x">
                 <source width="768" height="400" type="image/png" media="(min-width: 768px)" srcset="images/map/map-tablet@1x.png 1x, images/map/map-tablet@2x.png 2x">
                 <img class="map__image" src="images/map/map-mobile@1x.png" srcset="images/map/map-mobile@2x.png 2x" width="320" height="362" alt="Карта офиса по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург.">

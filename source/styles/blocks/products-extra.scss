@@ -1,5 +1,5 @@
 .products-extra {
-  padding: 26px $mobile-side 35px;
+  padding: 24px $mobile-side 35px;
 
   @media #{$tablet-width} {
     padding: 26px $tablet-side 74px;
@@ -16,7 +16,7 @@
 }
 
 .products-extra__title {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 
   @media #{$tablet-width} {
     margin: 0 40px 80px;
