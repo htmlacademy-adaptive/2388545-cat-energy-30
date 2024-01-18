@@ -4,15 +4,19 @@
 
 .offer__wrapper {
   position: relative;
+
+  @media #{$desktop-width} {
+    padding: 95px 0 106px;
+  }
 }
 
 .offer__position {
   @media #{$desktop-width} {
-    position: absolute;
+    //position: absolute;
     margin: auto;
     min-width: 1440px;
     max-width: calc(#{$max-content-width} + #{$desktop-side} * 2);
-    height: 400px;
+    //height: 400px;
     left: 0;
     right: 0;
   }
@@ -28,12 +32,13 @@
   }
 
   @media #{$desktop-width} {
-    position: absolute;
+    //position: absolute;
+    position: relative;
     box-sizing: border-box;
     gap: 93px;
     width: 565px;
     max-height: calc(100% - 100px);
-    top: 95px;
+    top: 0;
     left: 110px;
     padding: 60px 79px;
     background-color: #ffffff;
@@ -86,8 +91,15 @@
 }
 
 .offer__map {
-  display: block;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
+  position: relative;
+
+  @media #{$desktop-width} {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+//    overflow: hidden;
+  }
 }

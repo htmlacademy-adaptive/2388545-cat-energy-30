@@ -1,29 +1,55 @@
 .map {
-  position: relative;
+  //position: relative;
   min-height: 362px;
   z-index: 1;
 
   @media #{$tablet-width} {
-    min-height: 400px;
+    //min-height: 400px;
+    height: 100%;
   }
 
   @media #{$desktop-width} {
-    min-height: 400px;
+    //min-height: 400px;
+    min-height: initial;
+    height: 100%;
   }
 }
 
 .map__image-wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: -1;
+  @media #{$desktop-width} {
+    margin: auto;
+    height: 100%;
+    max-width: $max-content-width;
+    overflow: hidden;
+  }
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // z-index: -1;
 }
 
 .map__image {
   display: block;
-  object-fit: cover;
   width: 100%;
+  height: auto;
+
+  @media #{$desktop-width} {
+    width: auto;
+    height: 100%;
+  }
+
+
+}
+
+.map__iframe-wrapper {
+  //@media #{$desktop-width} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  //}
 }
 
 .map__iframe {
@@ -33,6 +59,7 @@
   border: none;
 
   @media #{$tablet-width} {
-    height: 400px;
+    //height: 400px;
+    height: 100%;
   }
 }
