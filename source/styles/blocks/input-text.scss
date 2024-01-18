@@ -53,7 +53,6 @@
   font-family: $secondary-font;
   font-size: 16px;
   text-transform: uppercase;
-  flex-shrink: 0;
 
   @media #{$tablet-width} {
     font-size: 20px;
@@ -100,9 +99,17 @@
 .input-text__input--email {
   padding-right: 35px;
   min-width: 170px;
+
+  @media #{$tablet-width} {
+    min-width: 250px;
+  }
 }
 
 .input-text__input--phone {
   padding-right: 35px;
   min-width: 170px;
+
+  @media #{$tablet-width} {
+    min-width: 250px;
+  }
 }
