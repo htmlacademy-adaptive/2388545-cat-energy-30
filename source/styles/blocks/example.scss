@@ -87,7 +87,7 @@
 }
 
 .example__stats {
-  margin: 19px 0 9px;
+  margin: 19px auto 9px;
   max-width: 330px;
 
   @media #{$tablet-width} {
