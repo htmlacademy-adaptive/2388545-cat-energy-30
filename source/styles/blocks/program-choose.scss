@@ -55,7 +55,8 @@
 }
 
 .program-choose__group {
-  padding: 0 0 21px;
+  position: relative;
+  padding: 0 0 22px;
 
   @media #{$tablet-width} {
     padding: 0;
@@ -68,11 +69,21 @@
 }
 
 .program-choose__group--data {
-  border-bottom: $border-grey;
+  &::after {
+    @media #{$mobile-only} {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+      box-shadow: 100vw 0 0 #e6e6e6;
+    }
+  }
 
   @media #{$tablet-width} {
     margin-bottom: 72px;
-    border-bottom: none;
   }
 
   @media #{$desktop-width} {
@@ -82,7 +93,19 @@
 
 .program-choose__group--program {
   padding: 23px 0 19px;
-  border-bottom: $border-grey;
+
+  &::after {
+    @media #{$mobile-only} {
+      position: absolute;
+      content: "";
+      right: 0;
+      bottom: 0;
+      width: 100vw;
+      height: 1px;
+      background-color: #e6e6e6;
+      box-shadow: 100vw 0 0 #e6e6e6;
+    }
+  }
 
   @media #{$tablet-width} {
     padding: 23px 25px 26px;
