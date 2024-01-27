@@ -23,6 +23,8 @@
   }
 
   @media #{$tablet-width} {
+    display: flex;
+    flex-direction: column;
     padding: 10px 37px 40px;
     background-color: $basic-grey;
   }
@@ -62,6 +64,10 @@
 .card__wrapper {
   @media #{$mobile-only} {
     display: flex;
+  }
+
+  @media #{$tablet-width} {
+    flex-grow: 1;
   }
 }
 
