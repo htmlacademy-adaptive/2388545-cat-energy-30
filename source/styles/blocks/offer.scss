@@ -13,7 +13,7 @@
 .offer__position {
   @media #{$desktop-width} {
     margin: auto;
-    min-width: 1440px;
+    min-width: 1000px;
     max-width: calc(#{$max-content-width} + #{$desktop-side} * 2);
     left: 0;
     right: 0;
